@@ -1,1 +1,0 @@
-Sitemap: https://context-dependent.github.io/bp-big-book/sitemap.xml
