@@ -4,7 +4,7 @@ project:
 
 book:
   title: "Blueprint Big Book"
-  author@R: person("Thomas", "McManus", email = "tmcmanus@blueprint-ade.ca")
+  author: "Thomas McManus"
   date: "2023-04-28"
   chapters:
     - index.qmd
@@ -17,6 +17,7 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-
+  pdf:
+    documentclass: scrreport
 
 
