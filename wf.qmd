@@ -1,0 +1,29 @@
+# Workflow
+
+This section describes the standard practices that govern data analysis work at Blueprint. It covers the following: how to use git and github to maintain transparent, robust projects; how to organize data and code to make that possible; what this might look like in the near future; and what we at the Data Lab hope it will become. 
+
+:::{.callout-warning}
+## Learning Curve Alert
+
+Git, the version control system introduced in this section, entails a relatively steep learning curve. It is a common source of frustration for beginners, and if you're just starting out, you should expect to experience some combination of confusion, dismay, and despair early on. 
+
+HOWEVER, once you have ascended the learning curve, git (combined with Github) will let you track down issues to their source, collaborate with your colleagues, and share your work with others and your future self. It is tough, but it is worth it, and it's the only game in town.
+:::
+
+## Why Workflow?
+
+Blueprint's data analysts have built tools and practices that suit their various needs. As a collective, we do data analysis well in the status quo model. Why establish standards for organizing and executing data analysis projects? Because we think that the whole process of data analysis could be easier to do, easier to learn, more predictable for managers, more collaborative for data goblins, and make more contributions to our collective intelligence as a community of practice. 
+
+## Recommended Reading
+
+Throughout this section, we make reference to a number of resources created by the R development and data analysis community. Each is a worthwhile read in its own right, and we recommend that you check them out at some point. 
+
+#### [Bryan, J. Happy Git and GitHub for the useR](https://happygitwithr.com/)
+
+The ur-text for R users looking to integrate git and Github into their analysis workflows. Bryan keeps it fun and friendly while providing a thorough introduction to the nuts and bolts of getting started. Closer to required than recommended reading. 
+
+#### [Wickham, H. R for Data Science](https://r4ds.had.co.nz/workflow-projects.html)
+
+Hadley is the GOAT R developer, and this book -- while a bit sparse and introductory -- offers valuable advice and instruction across the whole process, with some starting points for analysis workflow. 
+
+

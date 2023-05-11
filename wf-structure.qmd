@@ -1,0 +1,56 @@
+# Folder Structure {#sec-wf-structure}
+
+Currently, the typical analysis project puts code and data in the same folder. This has the benefit of increasing the technical portability of the analysis project. The analysis folder comes with 'batteries included', meaning that it could hypothetically be run immediately after being copied or moved to a different location. This technical benefit is, however, outweighed by its costs. 
+
+First, because the data can't leave the Z drive, the fact that you _could_ move them doesn't mean that you _should_. 
+Second, the structural coupling of data and code has also constrained our ability to institute meaningful version control, since the data can't be versioned so the project repos can't actually run. 
+Finally, the same data are sometimes required by multiple analysis projects, which has led to either not-strictly necessary duplication of data, or truly byzantine and fragile flows of information. 
+
+## A Conceptual Skeleton
+
+The diagram below presents a basic revision of the aforementioned structure. 
+The two substantial differences are: 
+
+1. rather than living within the same folder, data and code live in different places. Data stay in the project's Z drive folder; code, outputs, figures in the analysis repo (folder).
+2. the project's analysis repo is versioned with git and reflected in a remote repo hosted on GitHub
+
+```{mermaid}
+flowchart LR
+    P(Project Library)
+    MP(My Project)
+    D[Intranet folder including \nDeliverables, Admin docs, etc.]
+    P --- MP
+    MP --- D
+    Z(Z-drive)
+    MZ(My Project)
+    S[Encrypted data folder including\nSurvey Exports, Program Data, etc.]
+    Z --- MZ
+    MZ --- S
+    L(my-project)
+    ML(My Laptop)
+    C[local git repository, containing\nCode, reports, figures]
+    ML --- L
+    L --- C
+    GH(Github)
+    R(my-username/my-project)
+    CR[remote git repository\nreflecting its local counterpart]
+    GH --- R
+    R --- CR
+```
+
+This concept intentionally leaves the substructure of the data folder `Z:/My Project` and the analysis repo `My Laptop/my-project` up to the judgement and preference of the project's specific team. The key difference from the typical current structure is strictly that data (and only data) live in the Z-drive. 
+
+:::{.callout-note}
+Guidance and tools for setting up analysis repos according to your needs _is_ forthcoming, but it will be in a different section.
+:::
+
+
+## What else is new?  
+
+Locating analysis code and outputs outside of the Z-drive entails some considerations and requirements that were previously irrelevant: 
+
+- Remote analysis repositories (GitHub) should be [set to private](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#changing-a-repositorys-visibility) before any outputs are generated. Any colleagues who need to see the code should be invited to collaborate.
+- Paths to data files used in code will need to be "hard-coded", meaning that they will need to begin with "Z:/My Project/". We're working on ways to make this easier and more flexible, but hard-coding (in this case) will definitely work. 
+- Because files and folders in `Z:/My Project` will be referred to directly, the names of and paths to files and folders in `Z:/My Project` should, unless absolutely necessary, be left unchanged from the time that they are created.
+- Ensure that outputs (reports, figures, tables) don't include any personal identifying information. While they won't be available to the general public in a private Github repo, our policy is to confine such sensitive information to our Z-drive. 
+

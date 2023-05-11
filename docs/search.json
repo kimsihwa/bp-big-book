@@ -26,5 +26,47 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "wf.html",
+    "href": "wf.html",
+    "title": "Workflow",
+    "section": "",
+    "text": "This section describes the standard practices that govern data analysis work at Blueprint. It covers the following: how to use git and github to maintain transparent, robust projects; how to organize data and code to make that possible; what this might look like in the near future; and what we at the Data Lab hope it will become."
+  },
+  {
+    "objectID": "wf.html#why-workflow",
+    "href": "wf.html#why-workflow",
+    "title": "Workflow",
+    "section": "Why Workflow?",
+    "text": "Why Workflow?\nBlueprint’s data analysts have built tools and practices that suit their various needs. As a collective, we do data analysis well in the status quo model. Why establish standards for organizing and executing data analysis projects? Because we think that the whole process of data analysis could be easier to do, easier to learn, more predictable for managers, more collaborative for data goblins, and make more contributions to our collective intelligence as a community of practice."
+  },
+  {
+    "objectID": "wf.html#recommended-reading",
+    "href": "wf.html#recommended-reading",
+    "title": "Workflow",
+    "section": "Recommended Reading",
+    "text": "Recommended Reading\nThroughout this section, we make reference to a number of resources created by the R development and data analysis community. Each is a worthwhile read in its own right, and we recommend that you check them out at some point.\n\nBryan, J. Happy Git and GitHub for the useR\nThe ur-text for R users looking to integrate git and Github into their analysis workflows. Bryan keeps it fun and friendly while providing a thorough introduction to the nuts and bolts of getting started. Closer to required than recommended reading.\n\n\nWickham, H. R for Data Science\nHadley is the GOAT R developer, and this book – while a bit sparse and introductory – offers valuable advice and instruction across the whole process, with some starting points for analysis workflow."
+  },
+  {
+    "objectID": "wf-structure.html",
+    "href": "wf-structure.html",
+    "title": "3  Folder Structure",
+    "section": "",
+    "text": "Currently, the typical analysis project puts code and data in the same folder. This has the benefit of increasing the technical portability of the analysis project. The analysis folder comes with ‘batteries included’, meaning that it could hypothetically be run immediately after being copied or moved to a different location. This technical benefit is, however, outweighed by its costs.\nFirst, because the data can’t leave the Z drive, the fact that you could move them doesn’t mean that you should. Second, the structural coupling of data and code has also constrained our ability to institute meaningful version control, since the data can’t be versioned so the project repos can’t actually run. Finally, the same data are sometimes required by multiple analysis projects, which has led to either not-strictly necessary duplication of data, or truly byzantine and fragile flows of information."
+  },
+  {
+    "objectID": "wf-structure.html#a-conceptual-skeleton",
+    "href": "wf-structure.html#a-conceptual-skeleton",
+    "title": "3  Folder Structure",
+    "section": "3.1 A Conceptual Skeleton",
+    "text": "3.1 A Conceptual Skeleton\nThe diagram below presents a basic revision of the aforementioned structure. The two substantial differences are:\n\nrather than living within the same folder, data and code live in different places. Data stay in the project’s Z drive folder; code, outputs, figures in the analysis repo (folder).\nthe project’s analysis repo is versioned with git and reflected in a remote repo hosted on GitHub\n\n\n\n\n\nflowchart LR\n    P(Project Library)\n    MP(My Project)\n    D[Intranet folder including \\nDeliverables, Admin docs, etc.]\n    P --- MP\n    MP --- D\n    Z(Z-drive)\n    MZ(My Project)\n    S[Encrypted data folder including\\nSurvey Exports, Program Data, etc.]\n    Z --- MZ\n    MZ --- S\n    L(my-project)\n    ML(My Laptop)\n    C[local git repository, containing\\nCode, reports, figures]\n    ML --- L\n    L --- C\n    GH(Github)\n    R(my-username/my-project)\n    CR[remote git repository\\nreflecting its local counterpart]\n    GH --- R\n    R --- CR\n\n\n\n\n\n\n\n\nThis concept intentionally leaves the substructure of the data folder Z:/My Project and the analysis repo My Laptop/my-project up to the judgement and preference of the project’s specific team. The key difference from the typical current structure is strictly that data (and only data) live in the Z-drive.\n\n\n\n\n\n\nGuidance and tools for setting up analysis repos according to your needs is forthcoming, but it will be in a different section."
+  },
+  {
+    "objectID": "wf-structure.html#what-else-is-new",
+    "href": "wf-structure.html#what-else-is-new",
+    "title": "3  Folder Structure",
+    "section": "3.2 What else is new?",
+    "text": "3.2 What else is new?\nLocating analysis code and outputs outside of the Z-drive entails some considerations and requirements that were previously irrelevant:\n\nRemote analysis repositories (GitHub) should be set to private before any outputs are generated. Any colleagues who need to see the code should be invited to collaborate.\nPaths to data files used in code will need to be “hard-coded”, meaning that they will need to begin with “Z:/My Project/”. We’re working on ways to make this easier and more flexible, but hard-coding (in this case) will definitely work.\nBecause files and folders in Z:/My Project will be referred to directly, the names of and paths to files and folders in Z:/My Project should, unless absolutely necessary, be left unchanged from the time that they are created."
   }
 ]

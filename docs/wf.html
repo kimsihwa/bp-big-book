@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blueprint Big Book of Data Analysis - 1&nbsp; Introduction</title>
+<title>Blueprint Big Book of Data Analysis - Workflow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 
@@ -49,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wf.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./wf-git.html" rel="next">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +70,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+      <h1 class="quarto-secondary-nav-title">Workflow</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -126,12 +107,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./wf.html" class="sidebar-item-text sidebar-link">wf.html</a>
+            <a href="./wf.html" class="sidebar-item-text sidebar-link active">Workflow</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -169,14 +150,21 @@ div.csl-indent {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#why-workflow" id="toc-why-workflow" class="nav-link active" data-scroll-target="#why-workflow">Why Workflow?</a></li>
+  <li><a href="#recommended-reading" id="toc-recommended-reading" class="nav-link" data-scroll-target="#recommended-reading">Recommended Reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title d-none d-lg-block">Workflow</h1>
 </div>
 
 
@@ -190,15 +178,39 @@ div.csl-indent {
 
 </header>
 
-<p>This is a book created from markdown and executable code.</p>
-<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-knuth84" class="csl-entry" role="doc-biblioentry">
-Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
+<p>This section describes the standard practices that govern data analysis work at Blueprint. It covers the following: how to use git and github to maintain transparent, robust projects; how to organize data and code to make that possible; what this might look like in the near future; and what we at the Data Lab hope it will become.</p>
+<div class="callout-warning callout callout-style-simple callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Learning Curve Alert
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Git, the version control system introduced in this section, entails a relatively steep learning curve. It is a common source of frustration for beginners, and if you’re just starting out, you should expect to experience some combination of confusion, dismay, and despair early on.</p>
+<p>HOWEVER, once you have ascended the learning curve, git (combined with Github) will let you track down issues to their source, collaborate with your colleagues, and share your work with others and your future self. It is tough, but it is worth it, and it’s the only game in town.</p>
+</div>
+</div>
+<section id="why-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="why-workflow">Why Workflow?</h2>
+<p>Blueprint’s data analysts have built tools and practices that suit their various needs. As a collective, we do data analysis well in the status quo model. Why establish standards for organizing and executing data analysis projects? Because we think that the whole process of data analysis could be easier to do, easier to learn, more predictable for managers, more collaborative for data goblins, and make more contributions to our collective intelligence as a community of practice.</p>
+</section>
+<section id="recommended-reading" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-reading">Recommended Reading</h2>
+<p>Throughout this section, we make reference to a number of resources created by the R development and data analysis community. Each is a worthwhile read in its own right, and we recommend that you check them out at some point.</p>
+<section id="bryan-j.-happy-git-and-github-for-the-user" class="level4">
+<h4 class="anchored" data-anchor-id="bryan-j.-happy-git-and-github-for-the-user"><a href="https://happygitwithr.com/">Bryan, J. Happy Git and GitHub for the useR</a></h4>
+<p>The ur-text for R users looking to integrate git and Github into their analysis workflows. Bryan keeps it fun and friendly while providing a thorough introduction to the nuts and bolts of getting started. Closer to required than recommended reading.</p>
+</section>
+<section id="wickham-h.-r-for-data-science" class="level4">
+<h4 class="anchored" data-anchor-id="wickham-h.-r-for-data-science"><a href="https://r4ds.had.co.nz/workflow-projects.html">Wickham, H. R for Data Science</a></h4>
+<p>Hadley is the GOAT R developer, and this book – while a bit sparse and introductory – offers valuable advice and instruction across the whole process, with some starting points for analysis workflow.</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -301,13 +313,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wf.html" class="pagination-link">
-        <span class="nav-page-text">wf.html</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./wf-git.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">wf-git.html</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

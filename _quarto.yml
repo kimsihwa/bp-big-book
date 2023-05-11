@@ -3,20 +3,36 @@ project:
   output-dir: docs
 
 book:
-  title: "Blueprint Big Book"
+  title: "Blueprint Big Book of Data Analysis"
+  reader-mode: true
+  page-footer: 
+    left: |
+      The Blueprint Big Book of Data Analysis is an ongoing project
+      led by the members of Blueprint Data Lab. 
   author: "Thomas McManus"
   date: "2023-04-28"
   chapters:
     - index.qmd
     - intro.qmd
-    - test.qmd
-    - summary.qmd
+
+    - part: wf.qmd
+      chapters: 
+        - wf-git.qmd
+        - wf-structure.qmd
+        - wf-basic.qmd
+        - wf-goal.qmd
+    
     - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - cosmo
+    code-link: true
+    callout-appearance: simple
+
+editor: visual
 
 
