@@ -30,6 +30,7 @@ format:
   html:
     theme: 
       - cosmo
+      - bpbb.scss
     code-link: true
     callout-appearance: simple
 

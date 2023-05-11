@@ -1,3 +1,10 @@
+---
+website: 
+    comments:
+        giscus: 
+            repo: context-dependent/bp-big-book
+---
+
 # Git and Github {#sec-wf-git}
 
 Git is a _version control system_. 
