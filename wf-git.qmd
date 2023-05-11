@@ -1,0 +1,19 @@
+# Git and Github {#sec-wf-git}
+
+Git is a _version control system_. 
+It tracks the changes you make and _commit_ to files in a _local repository_.
+It lets you apply those changes to _remote repositories_ hosted on services like Github. 
+
+## Gitting rolling
+
+At a minimum, you'll need to [install git](https://happygitwithr.com/install-git.html) and [register a Github account](https://happygitwithr.com/github-acct.html).
+Optionally, you can also integrate git and Github into your [RStudio environment](https://happygitwithr.com/rstudio-git-github.html). 
+If you've done those things already, great, you're good to go! 
+Otherwise, it is _strongly recommended_ that you pause what you're doing now and read / work through [Happy Git](https://happygitwithr.com/) before continuing. 
+
+## Usage at Blueprint (as of May 2023)
+
+Right now, usage is highly varied. 
+Some members of the Data Lab team use git and Github for version control and hosting of both R packages and analysis project code. 
+It is not, however, part of the typical analysis project. 
+We will begin rolling out the [basic workflow]()
