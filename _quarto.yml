@@ -4,6 +4,9 @@ project:
 
 book:
   title: "Blueprint Big Book of Data Analysis"
+  comments: 
+    giscus: 
+      repo: context-dependent/bp-big-book
   reader-mode: true
   page-footer: 
     left: |
