@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Blueprint Big Book",
+    "title": "Blueprint Big Book of Data Analysis",
     "section": "",
     "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
   },
@@ -12,20 +12,6 @@
     "title": "1  Introduction",
     "section": "",
     "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "3  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "wf.html",
@@ -67,6 +53,55 @@
     "href": "wf-structure.html#what-else-is-new",
     "title": "3  Folder Structure",
     "section": "3.2 What else is new?",
-    "text": "3.2 What else is new?\nLocating analysis code and outputs outside of the Z-drive entails some considerations and requirements that were previously irrelevant:\n\nRemote analysis repositories (GitHub) should be set to private before any outputs are generated. Any colleagues who need to see the code should be invited to collaborate.\nPaths to data files used in code will need to be “hard-coded”, meaning that they will need to begin with “Z:/My Project/”. We’re working on ways to make this easier and more flexible, but hard-coding (in this case) will definitely work.\nBecause files and folders in Z:/My Project will be referred to directly, the names of and paths to files and folders in Z:/My Project should, unless absolutely necessary, be left unchanged from the time that they are created."
+    "text": "3.2 What else is new?\nLocating analysis code and outputs outside of the Z-drive entails some considerations and requirements that were previously irrelevant:\n\nRemote analysis repositories (GitHub) should be set to private before any outputs are generated. Any colleagues who need to see the code should be invited to collaborate.\nPaths to data files used in code will need to be “hard-coded”, meaning that they will need to begin with “Z:/My Project/”. We’re working on ways to make this easier and more flexible, but hard-coding (in this case) will definitely work.\nBecause files and folders in Z:/My Project will be referred to directly, the names of and paths to files and folders in Z:/My Project should, unless absolutely necessary, be left unchanged from the time that they are created.\nEnsure that outputs (reports, figures, tables) don’t include any personal identifying information. While they won’t be available to the general public in a private Github repo, our policy is to confine such sensitive information to our Z-drive."
+  },
+  {
+    "objectID": "wf-basic.html",
+    "href": "wf-basic.html",
+    "title": "4  Basic Workflow",
+    "section": "",
+    "text": "So you’ve got your project library folder, Z-drive data folder, and analysis repository set up. What now? In this brief chapter, we’ll walk through the loop that constitutes the basic workflow, along with some guidance on new situations that might come up."
+  },
+  {
+    "objectID": "wf-basic.html#creating-an-analysis-repo",
+    "href": "wf-basic.html#creating-an-analysis-repo",
+    "title": "4  Basic Workflow",
+    "section": "\n4.1 Creating an Analysis Repo",
+    "text": "4.1 Creating an Analysis Repo\nAn analysis repo is basically just an R project. You can set one up through the RStudio GUI, or with the usethis package. usethis also includes handy helpers for initializing a repository, so I tend to rely on it for each step.\n\nusethis::create_project(\"my-project\")\n\nThen, open the project folder in your development environment (RStudio or VSCode), and run the following in your R console1.\n\nusethis::use_git()\nusethis::use_github(private = TRUE)\n\nAssuming you have set up your Github credentials, your analysis repo will be up and running locally and remotely."
+  },
+  {
+    "objectID": "wf-basic.html#narrowing-the-scope",
+    "href": "wf-basic.html#narrowing-the-scope",
+    "title": "4  Basic Workflow",
+    "section": "\n4.2 Narrowing the scope",
+    "text": "4.2 Narrowing the scope\nAs mentioned previously, git can do a lot. For this basic workflow, you’re only going to use three commands to make it run: git add git commit and git push. We assume you’re the only one working on the analysis repo. If you are collaborating with others, and especially if you are working on different aspects of the project at the same time, please reach out for more guidance if you’re feeling unsure."
+  },
+  {
+    "objectID": "wf-basic.html#the-basic-pattern",
+    "href": "wf-basic.html#the-basic-pattern",
+    "title": "4  Basic Workflow",
+    "section": "\n4.3 The Basic Pattern",
+    "text": "4.3 The Basic Pattern\n\nIdentify a task (like “link survey data”, “clean program records”, “explore demographics”)\nWrite the code that completes the task (you’ve been here before)\n\ngit add -A to stage your changes to the analysis repo\n\ngit commit -m \"link survey data\" 2 to commit your changes with the message “link survey data” (use whatever task you’re actually doing)\n\ngit push -u origin main to upload your local changes to the remote (github) repository.\n\nThis basic pattern is a simplified version of the Repeated Amend workflow pattern described in Happy Git. You’re welcome to use that pattern as well, or explore Branching and Merging."
+  },
+  {
+    "objectID": "wf-basic.html#what-can-i-do-now-that-i-couldnt-before",
+    "href": "wf-basic.html#what-can-i-do-now-that-i-couldnt-before",
+    "title": "4  Basic Workflow",
+    "section": "\n4.4 What can I do now that I couldn’t before?",
+    "text": "4.4 What can I do now that I couldn’t before?\n\n\nAsk for help: if you’ve run into a problem that you don’t feel equipped to solve, you can ask one of your colleagues (with access to the Z-drive data folder) to clone the analysis repo, run your code, and offer edits, advice, or whatever else would help.\n\nShow your work: the analysis repo is less sensitive than the data folder, and so can be shown to any Blueprinter, whether they are on the project team or not."
+  },
+  {
+    "objectID": "wf-goal.html",
+    "href": "wf-goal.html",
+    "title": "5  Advanced / Aspirational Workflow",
+    "section": "",
+    "text": "TODO"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]
