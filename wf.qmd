@@ -24,6 +24,10 @@ The ur-text for R users looking to integrate git and Github into their analysis 
 
 #### [Wickham, H. R for Data Science](https://r4ds.had.co.nz/workflow-projects.html)
 
-Hadley is the GOAT R developer, and this book -- while a bit sparse and introductory -- offers valuable advice and instruction across the whole process, with some starting points for analysis workflow. 
+Hadley is the GOAT R developer, and this book -- while a bit sparse and introductory -- offers valuable advice and instruction across the whole process, with some starting points for analysis workflow.
+
+#### [Git Commands Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+Git can do many different things, and so comes with many different commands. This is a fairly comprehensive reference. Use it if you know what you want to do, you know git can do it, but you're just not sure which command will make it happen. 
 
 

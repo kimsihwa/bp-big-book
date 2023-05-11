@@ -16,4 +16,4 @@ Otherwise, it is _strongly recommended_ that you pause what you're doing now and
 Right now, usage is highly varied. 
 Some members of the Data Lab team use git and Github for version control and hosting of both R packages and analysis project code. 
 It is not, however, part of the typical analysis project. 
-We will begin rolling out the [basic workflow]()
+We will begin rolling out the [basic workflow](#sec-wf-basic) in the summer of 2023 and see how it goes. 
