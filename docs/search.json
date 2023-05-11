@@ -88,7 +88,7 @@
     "href": "wf-basic.html#what-can-i-do-now-that-i-couldnt-before",
     "title": "4  Basic Workflow",
     "section": "4.4 What can I do now that I couldn’t before?",
-    "text": "4.4 What can I do now that I couldn’t before?\n\nAsk for help: if you’ve run into a problem that you don’t feel equipped to solve, you can ask one of your colleagues (with access to the Z-drive data folder) to clone the analysis repo, run your code, and offer edits, advice, or whatever else would help.\nShow your work: the analysis repo is less sensitive than the data folder, and so can be shown to any Blueprinter, whether they are on the project team or not."
+    "text": "4.4 What can I do now that I couldn’t before?\n\nAsk for help: if you’ve run into a problem that you don’t feel equipped to solve, you can ask one of your colleagues (with access to the Z-drive data folder) to clone the analysis repo, run your code, and offer edits, advice, or whatever else would help.\nShow your work: the analysis repo is less sensitive than the data folder, and so can be shown to any Blueprinter, whether they are on the project team or not.\nFind solutions: get inspiration from other data analyzing printers using the same approach by borrowing their code."
   },
   {
     "objectID": "wf-goal.html",
