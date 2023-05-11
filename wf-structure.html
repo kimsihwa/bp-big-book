@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blueprint Big Book of Data Analysis - 1&nbsp; Introduction</title>
+<title>Blueprint Big Book of Data Analysis - 3&nbsp; Folder Structure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wf.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./wf-basic.html" rel="next">
+<link href="./wf-git.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -79,6 +60,9 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -92,7 +76,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wf.html">Workflow</a></li><li class="breadcrumb-item"><a href="./wf-structure.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Structure</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -132,7 +116,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -153,7 +137,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wf-structure.html" class="sidebar-item-text sidebar-link">
+  <a href="./wf-structure.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Structure</span></span></a>
   </div>
 </li>
@@ -183,14 +167,21 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#a-conceptual-skeleton" id="toc-a-conceptual-skeleton" class="nav-link active" data-scroll-target="#a-conceptual-skeleton"><span class="header-section-number">3.1</span> A Conceptual Skeleton</a></li>
+  <li><a href="#what-else-is-new" id="toc-what-else-is-new" class="nav-link" data-scroll-target="#what-else-is-new"><span class="header-section-number">3.2</span> What else is new?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title"><span id="sec-wf-structure" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Structure</span></span></h1>
 </div>
 
 
@@ -205,15 +196,69 @@ div.csl-indent {
 
 </header>
 
-<p>This is a book created from markdown and executable code.</p>
-<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
-
-
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-knuth84" class="csl-entry" role="listitem">
-Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
+<p>Currently, the typical analysis project puts code and data in the same folder. This has the benefit of increasing the technical portability of the analysis project. The analysis folder comes with ‘batteries included’, meaning that it could hypothetically be run immediately after being copied or moved to a different location. This technical benefit is, however, outweighed by its costs.</p>
+<p>First, because the data can’t leave the Z drive, the fact that you <em>could</em> move them doesn’t mean that you <em>should</em>. Second, the structural coupling of data and code has also constrained our ability to institute meaningful version control, since the data can’t be versioned so the project repos can’t actually run. Finally, the same data are sometimes required by multiple analysis projects, which has led to either not-strictly necessary duplication of data, or truly byzantine and fragile flows of information.</p>
+<section id="a-conceptual-skeleton" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="a-conceptual-skeleton"><span class="header-section-number">3.1</span> A Conceptual Skeleton</h2>
+<p>The diagram below presents a basic revision of the aforementioned structure. The two substantial differences are:</p>
+<ol type="1">
+<li>rather than living within the same folder, data and code live in different places. Data stay in the project’s Z drive folder; code, outputs, figures in the analysis repo (folder).</li>
+<li>the project’s analysis repo is versioned with git and reflected in a remote repo hosted on GitHub</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    P(Project Library)
+    MP(My Project)
+    D[Intranet folder including \nDeliverables, Admin docs, etc.]
+    P --- MP
+    MP --- D
+    Z(Z-drive)
+    MZ(My Project)
+    S[Encrypted data folder including\nSurvey Exports, Program Data, etc.]
+    Z --- MZ
+    MZ --- S
+    L(my-project)
+    ML(My Laptop)
+    C[local git repository, containing\nCode, reports, figures]
+    ML --- L
+    L --- C
+    GH(Github)
+    R(my-username/my-project)
+    CR[remote git repository\nreflecting its local counterpart]
+    GH --- R
+    R --- CR
+</pre>
 </div>
 </div>
+</div>
+</div>
+<p>This concept intentionally leaves the substructure of the data folder <code>Z:/My Project</code> and the analysis repo <code>My Laptop/my-project</code> up to the judgement and preference of the project’s specific team. The key difference from the typical current structure is strictly that data (and only data) live in the Z-drive.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Guidance and tools for setting up analysis repos according to your needs <em>is</em> forthcoming, but it will be in a different section.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="what-else-is-new" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="what-else-is-new"><span class="header-section-number">3.2</span> What else is new?</h2>
+<p>Locating analysis code and outputs outside of the Z-drive entails some considerations and requirements that were previously irrelevant:</p>
+<ul>
+<li>Remote analysis repositories (GitHub) should be <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#changing-a-repositorys-visibility">set to private</a> before any outputs are generated. Any colleagues who need to see the code should be invited to collaborate.</li>
+<li>Paths to data files used in code will need to be “hard-coded”, meaning that they will need to begin with “Z:/My Project/”. We’re working on ways to make this easier and more flexible, but hard-coding (in this case) will definitely work.</li>
+<li>Because files and folders in <code>Z:/My Project</code> will be referred to directly, the names of and paths to files and folders in <code>Z:/My Project</code> should, unless absolutely necessary, be left unchanged from the time that they are created.</li>
+<li>Ensure that outputs (reports, figures, tables) don’t include any personal identifying information. While they won’t be available to the general public in a private Github repo, our policy is to confine such sensitive information to our Z-drive.</li>
+</ul>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -451,13 +496,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./wf-git.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">wf-git.html</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wf.html" class="pagination-link">
-        <span class="nav-page-text">Workflow</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./wf-basic.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Basic Workflow</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

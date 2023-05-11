@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blueprint Big Book - 2&nbsp; This is a TEST</title>
+<title>Blueprint Big Book of Data Analysis - 4&nbsp; Basic Workflow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./wf-goal.html" rel="next">
+<link href="./wf-structure.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./test.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">This is a TEST</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wf.html">Workflow</a></li><li class="breadcrumb-item"><a href="./wf-basic.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Basic Workflow</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -88,7 +122,14 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Blueprint Big Book</a> 
+      <a href="./">Blueprint Big Book of Data Analysis</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -110,18 +151,41 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./wf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflow</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./test.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">This is a TEST</span></span></a>
+  <a href="./wf-git.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">wf-git.html</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  <a href="./wf-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Structure</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wf-basic.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Basic Workflow</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wf-goal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Advanced / Aspirational Workflow</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
@@ -134,14 +198,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#creating-an-analysis-repo" id="toc-creating-an-analysis-repo" class="nav-link active" data-scroll-target="#creating-an-analysis-repo"><span class="header-section-number">4.1</span> Creating an Analysis Repo</a></li>
+  <li><a href="#narrowing-the-scope" id="toc-narrowing-the-scope" class="nav-link" data-scroll-target="#narrowing-the-scope"><span class="header-section-number">4.2</span> Narrowing the scope</a></li>
+  <li><a href="#the-basic-pattern" id="toc-the-basic-pattern" class="nav-link" data-scroll-target="#the-basic-pattern"><span class="header-section-number">4.3</span> The Basic Pattern</a></li>
+  <li><a href="#what-can-i-do-now-that-i-couldnt-before" id="toc-what-can-i-do-now-that-i-couldnt-before" class="nav-link" data-scroll-target="#what-can-i-do-now-that-i-couldnt-before"><span class="header-section-number">4.4</span> What can I do now that I couldn’t before?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">This is a TEST</span></h1>
+<h1 class="title"><span id="sec-wf-basic" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Basic Workflow</span></span></h1>
 </div>
 
 
@@ -156,8 +229,47 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>So you’ve got your project library folder, Z-drive data folder, and analysis repository set up. What now? In this brief chapter, we’ll walk through the loop that constitutes the basic workflow, along with some guidance on new situations that might come up.</p>
+<section id="creating-an-analysis-repo" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="creating-an-analysis-repo"><span class="header-section-number">4.1</span> Creating an Analysis Repo</h2>
+<p>An analysis repo is basically just an R project. You can set one up through the RStudio GUI, or with the <code>usethis</code> package. <code>usethis</code> also includes handy helpers for initializing a repository, so I tend to rely on it for each step.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_project</span>(<span class="st">"my-project"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then, open the project folder in your development environment (RStudio or VSCode), and run the following in your R console<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git</span>()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github</span>(<span class="at">private =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Assuming you have set up your Github credentials, your analysis repo will be up and running locally and remotely.</p>
+</section>
+<section id="narrowing-the-scope" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="narrowing-the-scope"><span class="header-section-number">4.2</span> Narrowing the scope</h2>
+<p>As mentioned previously, git can do a lot. For this basic workflow, you’re only going to use three commands to make it run: <code>git add</code> <code>git commit</code> and <code>git push</code>. We assume you’re the only one working on the analysis repo. If you are collaborating with others, and especially if you are working on different aspects of the project at the same time, please reach out for more guidance if you’re feeling unsure.</p>
+</section>
+<section id="the-basic-pattern" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="the-basic-pattern"><span class="header-section-number">4.3</span> The Basic Pattern</h2>
+<ol type="1">
+<li>Identify a task (like “link survey data”, “clean program records”, “explore demographics”)</li>
+<li>Write the code that completes the task (you’ve been here before)</li>
+<li><code>git add -A</code> to stage your changes to the analysis repo</li>
+<li><code>git commit -m "link survey data"</code> <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> to commit your changes with the message “link survey data” (use whatever task you’re actually doing)</li>
+<li><code>git push -u origin main</code> to upload your local changes to the remote (github) repository.</li>
+</ol>
+<p>This basic pattern is a simplified version of the <a href="https://happygitwithr.com/repeated-amend.html">Repeated Amend</a> workflow pattern described in Happy Git. You’re welcome to use that pattern as well, or explore <a href="https://happygitwithr.com/git-branches.html">Branching and Merging</a>.</p>
+</section>
+<section id="what-can-i-do-now-that-i-couldnt-before" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="what-can-i-do-now-that-i-couldnt-before"><span class="header-section-number">4.4</span> What can I do now that I couldn’t before?</h2>
+<ul>
+<li><strong>Ask for help:</strong> if you’ve run into a problem that you don’t feel equipped to solve, you can ask one of your colleagues (with access to the Z-drive data folder) to clone the analysis repo, run your code, and offer edits, advice, or whatever else would help.</li>
+<li><strong>Show your work:</strong> the analysis repo is less sensitive than the data folder, and so can be shown to any Blueprinter, whether they are on the project team or not.</li>
+</ul>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The R console, where you execute R commands, is not the same as the Terminal (a.k.a. Shell, Command Prompt) You may not have used the terminal before, but you should be able to access it within your RStudio interface. See again <a href="https://happygitwithr.com/shell.html">Happy Git</a> for more detail.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Do your best to include a commit message every time you make a commit. Git requires that every commit have an accompanying message, and if you don’t provide in the shell directly, it will send you to vim, a much <em>more</em> confusing program.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -395,17 +507,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./wf-structure.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Structure</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./wf-goal.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Advanced / Aspirational Workflow</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">The Blueprint Big Book of Data Analysis is an ongoing project led by the members of Blueprint Data Lab.</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
