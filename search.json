@@ -4,21 +4,14 @@
     "href": "index.html",
     "title": "Blueprint Big Book of Data Analysis",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "wf.html",
-    "href": "wf.html",
-    "title": "Workflow",
-    "section": "",
-    "text": "This section describes the standard practices that govern data analysis work at Blueprint. It covers the following: how to use git and github to maintain transparent, robust projects; how to organize data and code to make that possible; what this might look like in the near future; and what we at the Data Lab hope it will become."
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "wf.html#why-workflow",
@@ -35,18 +28,11 @@
     "text": "Recommended Reading\nThroughout this section, we make reference to a number of resources created by the R development and data analysis community. Each is a worthwhile read in its own right, and we recommend that you check them out at some point.\n\nBryan, J. Happy Git and GitHub for the useR\nThe ur-text for R users looking to integrate git and Github into their analysis workflows. Bryan keeps it fun and friendly while providing a thorough introduction to the nuts and bolts of getting started. Closer to required than recommended reading.\n\n\nWickham, H. R for Data Science\nHadley is the GOAT R developer, and this book – while a bit sparse and introductory – offers valuable advice and instruction across the whole process, with some starting points for analysis workflow."
   },
   {
-    "objectID": "wf-structure.html",
-    "href": "wf-structure.html",
-    "title": "3  Folder Structure",
-    "section": "",
-    "text": "Currently, the typical analysis project puts code and data in the same folder. This has the benefit of increasing the technical portability of the analysis project. The analysis folder comes with ‘batteries included’, meaning that it could hypothetically be run immediately after being copied or moved to a different location. This technical benefit is, however, outweighed by its costs.\nFirst, because the data can’t leave the Z drive, the fact that you could move them doesn’t mean that you should. Second, the structural coupling of data and code has also constrained our ability to institute meaningful version control, since the data can’t be versioned so the project repos can’t actually run. Finally, the same data are sometimes required by multiple analysis projects, which has led to either not-strictly necessary duplication of data, or truly byzantine and fragile flows of information."
-  },
-  {
     "objectID": "wf-structure.html#a-conceptual-skeleton",
     "href": "wf-structure.html#a-conceptual-skeleton",
     "title": "3  Folder Structure",
     "section": "3.1 A Conceptual Skeleton",
-    "text": "3.1 A Conceptual Skeleton\nThe diagram below presents a basic revision of the aforementioned structure. The two substantial differences are:\n\nrather than living within the same folder, data and code live in different places. Data stay in the project’s Z drive folder; code, outputs, figures in the analysis repo (folder).\nthe project’s analysis repo is versioned with git and reflected in a remote repo hosted on GitHub\n\n\n\n\n\nflowchart LR\n    P(Project Library)\n    MP(My Project)\n    D[Intranet folder including \\nDeliverables, Admin docs, etc.]\n    P --- MP\n    MP --- D\n    Z(Z-drive)\n    MZ(My Project)\n    S[Encrypted data folder including\\nSurvey Exports, Program Data, etc.]\n    Z --- MZ\n    MZ --- S\n    L(my-project)\n    ML(My Laptop)\n    C[local git repository, containing\\nCode, reports, figures]\n    ML --- L\n    L --- C\n    GH(Github)\n    R(my-username/my-project)\n    CR[remote git repository\\nreflecting its local counterpart]\n    GH --- R\n    R --- CR\n\n\n\n\n\n\n\n\nThis concept intentionally leaves the substructure of the data folder Z:/My Project and the analysis repo My Laptop/my-project up to the judgement and preference of the project’s specific team. The key difference from the typical current structure is strictly that data (and only data) live in the Z-drive.\n\n\n\n\n\n\nGuidance and tools for setting up analysis repos according to your needs is forthcoming, but it will be in a different section."
+    "text": "3.1 A Conceptual Skeleton\nThe diagram below presents a basic revision of the aforementioned structure. The two substantial differences are:\n\nrather than living within the same folder, data and code live in different places. Data stay in the project’s Z drive folder; code, outputs, figures in the analysis repo (folder).\nthe project’s analysis repo is versioned with git and reflected in a remote repo hosted on GitHub\n\n\n\n\n\nflowchart LR\n    P(Project Library)\n    MP(My Project)\n    D[Intranet folder including \\nDeliverables, Admin docs, etc.]\n    P --- MP\n    MP --- D\n    Z(Z-drive)\n    MZ(My Project)\n    S[Encrypted data folder including\\nSurvey Exports, Program Data, etc.]\n    Z --- MZ\n    MZ --- S\n    L(my-project)\n    ML(My Laptop)\n    C[local git repository, containing\\nCode, reports, figures]\n    ML --- L\n    L --- C\n    GH(Github)\n    R(my-username/my-project)\n    CR[remote git repository\\nreflecting its local counterpart]\n    GH --- R\n    R --- CR\n\n\n\n\n\nThis concept intentionally leaves the substructure of the data folder Z:/My Project and the analysis repo My Laptop/my-project up to the judgement and preference of the project’s specific team. The key difference from the typical current structure is strictly that data (and only data) live in the Z-drive.\n\n\n\n\n\n\nGuidance and tools for setting up analysis repos according to your needs is forthcoming, but it will be in a different section."
   },
   {
     "objectID": "wf-structure.html#what-else-is-new",
@@ -54,13 +40,6 @@
     "title": "3  Folder Structure",
     "section": "3.2 What else is new?",
     "text": "3.2 What else is new?\nLocating analysis code and outputs outside of the Z-drive entails some considerations and requirements that were previously irrelevant:\n\nRemote analysis repositories (GitHub) should be set to private before any outputs are generated. Any colleagues who need to see the code should be invited to collaborate.\nPaths to data files used in code will need to be “hard-coded”, meaning that they will need to begin with “Z:/My Project/”. We’re working on ways to make this easier and more flexible, but hard-coding (in this case) will definitely work.\nBecause files and folders in Z:/My Project will be referred to directly, the names of and paths to files and folders in Z:/My Project should, unless absolutely necessary, be left unchanged from the time that they are created.\nEnsure that outputs (reports, figures, tables) don’t include any personal identifying information. While they won’t be available to the general public in a private Github repo, our policy is to confine such sensitive information to our Z-drive."
-  },
-  {
-    "objectID": "wf-basic.html",
-    "href": "wf-basic.html",
-    "title": "4  Basic Workflow",
-    "section": "",
-    "text": "So you’ve got your project library folder, Z-drive data folder, and analysis repository set up. What now? In this brief chapter, we’ll walk through the loop that constitutes the basic workflow, along with some guidance on new situations that might come up."
   },
   {
     "objectID": "wf-basic.html#creating-an-analysis-repo",
@@ -89,6 +68,13 @@
     "title": "4  Basic Workflow",
     "section": "4.4 What can I do now that I couldn’t before?",
     "text": "4.4 What can I do now that I couldn’t before?\n\nAsk for help: if you’ve run into a problem that you don’t feel equipped to solve, you can ask one of your colleagues (with access to the Z-drive data folder) to clone the analysis repo, run your code, and offer edits, advice, or whatever else would help.\nShow your work: the analysis repo is less sensitive than the data folder, and so can be shown to any Blueprinter, whether they are on the project team or not.\nFind solutions: get inspiration from other data analyzing printers using the same approach by borrowing their code."
+  },
+  {
+    "objectID": "wf-basic.html#footnotes",
+    "href": "wf-basic.html#footnotes",
+    "title": "4  Basic Workflow",
+    "section": "",
+    "text": "The R console, where you execute R commands, is not the same as the Terminal (a.k.a. Shell, Command Prompt) You may not have used the terminal before, but you should be able to access it within your RStudio interface. See again Happy Git for more detail.↩︎\nDo your best to include a commit message every time you make a commit. Git requires that every commit have an accompanying message, and if you don’t provide in the shell directly, it will send you to vim, a much more confusing program.↩︎"
   },
   {
     "objectID": "wf-goal.html",
