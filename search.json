@@ -53,7 +53,7 @@
     "href": "wf-git.html#usage-at-blueprint-as-of-may-2023",
     "title": "2  Git and Github",
     "section": "2.2 Usage at Blueprint (as of May 2023)",
-    "text": "2.2 Usage at Blueprint (as of May 2023)\nRight now, usage is highly varied. Some members of the Data Lab team use git and Github for version control and hosting of both R packages and analysis project code. It is not, however, part of the typical analysis project. We will begin rolling out the basic workflow"
+    "text": "2.2 Usage at Blueprint (as of May 2023)\nRight now, usage is highly varied. Some members of the Data Lab team use git and Github for version control and hosting of both R packages and analysis project code. It is not, however, part of the typical analysis project. We will begin rolling out the basic workflow in the summer of 2023 and see how it goes."
   },
   {
     "objectID": "wf-structure.html",
