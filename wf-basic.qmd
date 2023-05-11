@@ -5,15 +5,13 @@ So you've got your project library folder, Z-drive data folder, and analysis rep
 ## Creating an Analysis Repo
 
 An analysis repo is basically just an R project. You can set one up through the RStudio GUI, or with the `usethis` package. `usethis` also includes handy helpers for initializing a repository, so I tend to rely on it for each step. 
-```{r}
-#| eval: false
+```r
 usethis::create_project("my-project")
 ```
 
 Then, open the project folder in your development environment (RStudio or VSCode), and run the following in your R console[^fn-console]. 
 
-```{r}
-#| eval: false
+```r
 usethis::use_git()
 usethis::use_github(private = TRUE)
 ```
