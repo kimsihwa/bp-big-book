@@ -95,7 +95,7 @@
     "href": "wf-goal.html",
     "title": "5  Advanced / Aspirational Workflow",
     "section": "",
-    "text": "TODO"
+    "text": "This section is still quite rough. If you’re here, you’re welcome to drop suggested changes, additions, or clarifications in the comments. Your input will be incorporated into the development process.\n\n\n\nBolded items are clear hooks for tools, rules, standards.\nAP[X] is the Xth analysis planning stage R[X] is the Xth artefact of the analysis process\n\nPre-contract\n\n\nProposal\nResearch objectives\nAP0: Preliminary plan\n\nR0: High-level methodology\n\n\n\nData design\n\n\nSurvey designs\nAdmin datasets\nAP1: Specify approach\n\nR1: Detailed methodology\nR2: Input data dictionary\n\n\n\nData collection\n\n\nMonitoring:\n\nR3: Monitoring log\n\n\n\nAnalyze\n\n\nHave the data for the analysis\nHave accumulated insights\nHave monitoring logs\nExplore loop:\n\nR4: Exploratory output pile\nR5: Decision log\n\nAP2: revisit R1: Detailed methodology\n\nRealign analysis objectives with project objectives\nAssess feasibility through exploration\nIdentify limitations and enumerate implications\nJustify methodological adapatations\nIteratively build R6: data pipeline\nDocument final data pipeline\nFinalize methodology\n\n\n\nPublish\n\n\nAP3: Schedule of deliverable outputs\n\nR7: Analysis outputs"
   },
   {
     "objectID": "references.html",
