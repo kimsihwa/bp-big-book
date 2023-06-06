@@ -1,3 +1,45 @@
 # Advanced / Aspirational Workflow {#sec-wf-goal}
 
-TODO
+:::{.callout-warning}
+This section is still quite rough. 
+If you're here, you're welcome to drop suggested changes, additions, or clarifications in the comments. 
+Your input will be incorporated into the development process. 
+:::
+
+**Bolded** items are clear hooks for tools, rules, standards. 
+
+`AP[X]` is the Xth analysis planning stage
+`R[X]` is the Xth artefact of the analysis process
+
+1. Pre-contract
+  + Proposal
+  + Research objectives
+  + `AP0`: **Preliminary plan**
+    - `R0`: **High-level methodology**
+2. Data design
+  + Survey designs
+  + Admin datasets
+  + `AP1`: **Specify approach**
+    - `R1`: **Detailed methodology**
+    - `R2`: **Input data dictionary**
+3. Data collection
+  + Monitoring: 
+    - `R3`: **Monitoring log**
+4. Analyze
+  + Have the data for the analysis
+  + Have accumulated insights 
+  + Have monitoring logs
+  + Explore loop: 
+    - `R4`: **Exploratory output pile** 
+    - `R5`: **Decision log**
+  + `AP2`: revisit `R1`: **Detailed methodology**
+    - Realign analysis objectives with project objectives
+    - Assess feasibility through exploration
+    - Identify limitations and enumerate implications
+    - Justify methodological adapatations
+    - Iteratively build `R6`: **data pipeline**
+    - Document final data pipeline
+    - Finalize methodology
+5. Publish
+  + `AP3`: **Schedule of deliverable outputs**
+    - `R7`: **Analysis outputs**

@@ -1,0 +1,28 @@
+# Visualization
+
+This chapter offers a general introduction to data visualization at Blueprint. 
+Before introducing the typical toolkit, corporate standards, and a gallery of examples, 
+it attempts to speak to the purposes visualization serves in general and at Blueprint in particular. 
+
+## Recomended Reading
+
+Most of the recommended readings in this section focus on the conceptual approach to tackling visualization problems. 
+This is intentional, since designing the right visualization is by far the deeper and more complex challenge than instructing a computer how to make it. 
+
+### [Edward Tufte, The Visual Display of Quantitative Information](https://drive.google.com/file/d/11nz_mxpoYCqOsGlxpVxmhAatFm5Y1MR7/view?usp=drive_link)
+
+The way that information is visualized in academia, business, and the media makes Edward Tufte sick. 
+In this book, he explains what makes him mad, why it infuriates him so, and how it could be different.
+While his puritanical minimalism often overshoots its target (occasionally at the expense of clarity), 
+it will transform the way you think about designing charts, tables, and maps for the better. 
+
+### [Alberto Cairo, The Functional Art](https://drive.google.com/file/d/15yVNyBBtWxEfSduF2IMWkza09k9_NjDY/view?usp=drive_link)
+
+Cairo comes from a similar philosophical perspective as Tufte, but is in turns more pragmatic, patient, and permissive. 
+Instead of characterizing any non-informative or redundant element of a visualization as 'chart-junk', 
+he develops a useful concept of the different objectives visualizations can be designed to achieve, 
+and discussses the tradeoff between depth and familiarity with a good deal more nuance. 
+
+### [Hadley Wickham et al, ggplot2](https://ggplot2-book.org/introduction.html)
+
+An in-depth guide to ggplot2, the standard software package for visualization at Blueprint.

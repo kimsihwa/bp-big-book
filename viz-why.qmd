@@ -1,0 +1,14 @@
+# Why Visualize? 
+
+## Exploration
+
+- testing your prior expectations about the data
+- identifying patterns and relationships
+- visually confirming the results of processing
+
+## Presentation
+
+- supporting an argument
+- anchoring an explanation
+- impactfully illustrating a comparison
+
