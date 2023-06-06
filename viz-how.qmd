@@ -1,0 +1,9 @@
+# How to Visualize
+
+## For exploration
+
+## For presentation
+
+## ggplot2
+
+## Other software
