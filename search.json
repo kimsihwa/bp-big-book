@@ -28,18 +28,25 @@
     "text": "Recommended Reading\nThroughout this section, we make reference to a number of resources created by the R development and data analysis community. Each is a worthwhile read in its own right, and we recommend that you check them out at some point.\n\nBryan, J. Happy Git and GitHub for the useR\nThe ur-text for R users looking to integrate git and Github into their analysis workflows. Bryan keeps it fun and friendly while providing a thorough introduction to the nuts and bolts of getting started. Closer to required than recommended reading.\n\n\nWickham, H. R for Data Science\nHadley is the GOAT R developer, and this book – while a bit sparse and introductory – offers valuable advice and instruction across the whole process, with some starting points for analysis workflow.\n\n\nGit Commands Cheatsheet\nGit can do many different things, and so comes with many different commands. This is a fairly comprehensive reference. Use it if you know what you want to do, you know git can do it, but you’re just not sure which command will make it happen."
   },
   {
+    "objectID": "wf-git.html#why-git-and-github",
+    "href": "wf-git.html#why-git-and-github",
+    "title": "2  Git and Github",
+    "section": "2.1 Why Git and Github?",
+    "text": "2.1 Why Git and Github?\nIn 2017, Jennifer Bryan expanded on the ‘Why Git?’ chapter of her invaluable instructional book in the paper Excuse me, do you have a moment to talk about version control?. She articulates the benefits so clearly that they are not worth rephrasing:\n\nDoing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect.\nCollaboration is much more structured, with powerful tools for asynchronous work and managing versions.\nThe marginal effort required to create a web presence for a project is negligible.\nBy using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle.\n\nIf you have worked on a data analysis project at Blueprint, particularly one that involves collaboration, you have undoubtedly done the following:\n\nSearching for an explanation about when or why a specific choice about processing the data was made\nExperienced disorientation attempting to navigate someone else’s code\nSpent hours undoing a change that breaks the pipeline\nWanted someone’s help or advice about how to solve a problem, but didn’t feel like it would be worth getting them access\n\nHosted version control like Github empowers you with tools to simplify and routinize any of these situations."
+  },
+  {
     "objectID": "wf-git.html#gitting-rolling",
     "href": "wf-git.html#gitting-rolling",
     "title": "2  Git and Github",
-    "section": "2.1 Gitting rolling",
-    "text": "2.1 Gitting rolling\nAt a minimum, you’ll need to install git and register a Github account. Optionally, you can also integrate git and Github into your RStudio environment. If you’ve done those things already, great, you’re good to go! Otherwise, it is strongly recommended that you pause what you’re doing now and read / work through Happy Git before continuing."
+    "section": "2.2 Gitting rolling",
+    "text": "2.2 Gitting rolling\nAt a minimum, you’ll need to install git and register a Github account. Optionally, you can also integrate git and Github into your RStudio environment. If you’ve done those things already, great, you’re good to go! Otherwise, it is strongly recommended that you pause what you’re doing now and read / work through Happy Git before continuing."
   },
   {
     "objectID": "wf-git.html#usage-at-blueprint-as-of-may-2023",
     "href": "wf-git.html#usage-at-blueprint-as-of-may-2023",
     "title": "2  Git and Github",
-    "section": "2.2 Usage at Blueprint (as of May 2023)",
-    "text": "2.2 Usage at Blueprint (as of May 2023)\nRight now, usage is highly varied. Some members of the Data Lab team use git and Github for version control and hosting of both R packages and analysis project code. It is not, however, part of the typical analysis project. We will begin rolling out the basic workflow in the summer of 2023 and see how it goes."
+    "section": "2.3 Usage at Blueprint (as of May 2023)",
+    "text": "2.3 Usage at Blueprint (as of May 2023)\nRight now, usage is highly varied. Some members of the Data Lab team use git and Github for version control and hosting of both R packages and analysis project code. It is not, however, part of the typical analysis project. We will begin rolling out the basic workflow in the summer of 2023 and see how it goes."
   },
   {
     "objectID": "wf-structure.html#a-conceptual-skeleton",
