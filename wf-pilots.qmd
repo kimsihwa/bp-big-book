@@ -1,0 +1,53 @@
+# Workflow Pilots
+
+This chapter is a collection area for promising workflow practices at Blueprint. 
+Look here to see what other printers are experimenting with right now. 
+
+## Using Github Issues to Host a Project's Decision Log
+
+| Meta    | data                     |
+|--------:|:-------------------------|
+| project | FSC Benchmarks           |
+| repo    | [alex-rand/fsc-benchmarks](https://github.com/alex-rand/fsc-benchmarks/issues) |
+| contact | @alex-rand               |
+
+### What is the practice? 
+
+- use Github's Issues tracker to: 
+  + ask and answer questions about program, data, and methods
+  + collaboratively arrive at decisions about the best path forward
+  + label conversations to help others focus their contributions
+- connect tasks (branches, pull requests) to the conversations that produced them
+
+### Why is it good? 
+
+- lives in an obvious, highly accessible place attached to the project's repo 
+- enables transparent, asynchronous, collaborative decision-making
+- organically documents that process
+- provides an intuitive interface for tracking down the rationale for decisions which would otherwise be forgotten
+- labels make it easy to highlight issues for specific team members or cross-functional collaborators
+- code reviewers have a clear first stop for answering questions about decisions reflected in the code they're reviewing
+
+### What does it look like? 
+
+#### Browsing open issues
+
+![A List of Github Issues](img/wf-pilots-01-list.png)
+
+#### Filtering for the ones you might be able to help with
+
+![Filtered list of Gihub Issues](img/wf-pilots-02-filter.png)
+
+#### An active discussion
+
+![Discussing issue #30](img/wf-pilots-03-discuss.png)
+
+#### Making a branch for work associated with an issue
+
+![Creating a branch connected to the issue](img/wf-pilots-04-connect.png)
+
+#### Searching past issues
+
+![Searching through closed issues](img/wf-pilots-05-search-closed.png)
+
+
