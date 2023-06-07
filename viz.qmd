@@ -9,6 +9,10 @@ it attempts to speak to the purposes visualization serves in general and at Blue
 Most of the recommended readings in this section focus on the conceptual approach to tackling visualization problems. 
 This is intentional, since designing the right visualization is by far the deeper and more complex challenge than instructing a computer how to make it. 
 
+### [Andrew Heiss, Data Visualization](https://datavizm20.classes.andrewheiss.com/)
+
+A thorough yet accessible free course on data visualization in general, illustrated with practical applications in R and ggplot. 
+
 ### [Edward Tufte, The Visual Display of Quantitative Information](https://drive.google.com/file/d/11nz_mxpoYCqOsGlxpVxmhAatFm5Y1MR7/view?usp=drive_link)
 
 The way that information is visualized in academia, business, and the media makes Edward Tufte sick. 
