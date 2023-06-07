@@ -1,15 +1,28 @@
----
-website: 
-    comments:
-        giscus: 
-            repo: context-dependent/bp-big-book
----
-
 # Git and Github {#sec-wf-git}
 
 Git is a _version control system_. 
 It tracks the changes you make and _commit_ to files in a _local repository_.
 It lets you apply those changes to _remote repositories_ hosted on services like Github. 
+
+## Why Git and Github?
+
+In 2017, Jennifer Bryan expanded on the 'Why Git?' chapter of her invaluable instructional book in the paper 
+[_Excuse me, do you have a moment to talk about version control?_](https://peerj.com/preprints/3159v2/). 
+She articulates the benefits so clearly that they are not worth rephrasing:
+
+- Doing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect.
+- Collaboration is much more structured, with powerful tools for asynchronous work and managing versions.
+- The marginal effort required to create a web presence for a project is negligible.
+- By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle.
+
+If you have worked on a data analysis project at Blueprint, particularly one that involves collaboration, you have undoubtedly done the following: 
+
+- Searching for an explanation about when or why a specific choice about processing the data was made
+- Experienced disorientation attempting to navigate someone else's code
+- Spent hours undoing a change that breaks the pipeline
+- Wanted someone's help or advice about how to solve a problem, but didn't feel like it would be worth getting them access
+
+Hosted version control like Github empowers you with tools to simplify and routinize any of these situations.
 
 ## Gitting rolling
 
