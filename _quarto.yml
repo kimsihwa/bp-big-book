@@ -25,6 +25,17 @@ book:
         - wf-basic.qmd
         - wf-goal.qmd
     
+    - part: viz.qmd
+      chapters:
+        - viz-why.qmd
+        - viz-how.qmd
+        - viz-gallery.qmd
+    
+    - part: sd.qmd
+      chapters: 
+        - sd-courses.qmd
+        - sd-books.qmd
+
     - references.qmd
 
 bibliography: references.bib

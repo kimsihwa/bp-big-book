@@ -14,6 +14,8 @@ HOWEVER, once you have ascended the learning curve, git (combined with Github) w
 
 Blueprint's data analysts have built tools and practices that suit their various needs. As a collective, we do data analysis well in the status quo model. Why establish standards for organizing and executing data analysis projects? Because we think that the whole process of data analysis could be easier to do, easier to learn, more predictable for managers, more collaborative for data goblins, and make more contributions to our collective intelligence as a community of practice. 
 
+
+
 ## Recommended Reading
 
 Throughout this section, we make reference to a number of resources created by the R development and data analysis community. Each is a worthwhile read in its own right, and we recommend that you check them out at some point. 
