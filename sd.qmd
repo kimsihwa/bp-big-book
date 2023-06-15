@@ -1,0 +1,37 @@
+# Developing Your Skills
+
+{{< include content/_wip.qmd >}}
+
+The Blueprint Data Lab's mandate is not merely to ensure that our firm remains on the cutting edge of data-driven solutions, but also to foster an environment of growth, learning, and curiosity. 
+The world of data is continuously evolving, with new techniques, technologies, and paradigms emerging regularly. 
+As such, continuous learning across the organization is not only beneficial but critical for us to remain adept and agile in navigating the complex challenges we find ourselves faced with every day.
+
+To thrive in our work, we must harness the , using it to shape insights and drive decision-making. 
+Developing our skills in four main areas—**programming, statistics, analysis, and visualization**—is thus integral to our work as consultants. 
+These are the pillars of data literacy that form the foundation of our professional expertise.
+
+- **Programming**: In an age where automation is king, knowing how to code is essential. 
+Programming allows us to extract, clean, process, and manipulate data with precision and speed. 
+It opens up vast possibilities for data exploration and analysis that manual methods simply cannot match.
+- **Statistics**: This is the language of data. 
+It provides the mathematical framework for understanding, interpreting, and making inferences from data. 
+A solid grounding in statistics is necessary for us to distill sense from the noisy world of raw data and to validate the insights we generate.
+- **Analysis**: This skill involves putting the tools of programming and the principles of statistics to work together. 
+It's about identifying patterns and trends, solving problems, and making meaning. 
+It's an investigative process that demands both rigorous scientific thinking and creative intuition.
+- **Visualization**: It's one thing to find insights in data; it's another to communicate them effectively. 
+Data visualization is about using graphical representations to tell the story of the data in a way that is intuitive and compelling. 
+It bridges the gap between data experts and non-experts, making our insights accessible to all.
+- **Equity**: In alignment with Blueprint's core values, we must do our best to ensure that our data analysis forwards the goals of a more equitable and just society. 
+This means more than just identifying and mitigating the analytical risks posed by structural, societal, and methodological biases. 
+It means situating any data analysis we carry out within an anti-oppression (anti-racist, anti-colonialist, anti-ablist) philosophical framework.
+
+In this chapter, "**Developing Your Skills**," you'll find a curated list of resources designed to help you strengthen these four pillars. 
+They range from introductory courses for those new to the field, to advanced readings for seasoned professionals seeking to deepen their knowledge. 
+Each resource has been carefully selected based on its educational value, practical relevance, and alignment with our firm's work and values.
+
+Remember, as professionals in a field that's ever-changing, our learning journey never ends. 
+It's my hope that this resource guide will inspire you to continuously cultivate your skills, innovate in your work, and strive towards mastery. 
+With the right tools, the right mindset, and a dedication to lifelong learning, there's no limit to the impact we can achieve.
+
+Welcome to this exciting chapter of your professional development.
