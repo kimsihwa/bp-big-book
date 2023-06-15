@@ -105,6 +105,69 @@
     "text": "This section is still quite rough. If you’re here, you’re welcome to drop suggested changes, additions, or clarifications in the comments. Your input will be incorporated into the development process.\n\n\n\nBolded items are clear hooks for tools, rules, standards.\nAP[X] is the Xth analysis planning stage R[X] is the Xth artefact of the analysis process\n\nPre-contract\n\n\nProposal\nResearch objectives\nAP0: Preliminary plan\n\nR0: High-level methodology\n\n\n\nData design\n\n\nSurvey designs\nAdmin datasets\nAP1: Specify approach\n\nR1: Detailed methodology\nR2: Input data dictionary\n\n\n\nData collection\n\n\nMonitoring:\n\nR3: Monitoring log\n\n\n\nAnalyze\n\n\nHave the data for the analysis\nHave accumulated insights\nHave monitoring logs\nExplore loop:\n\nR4: Exploratory output pile\nR5: Decision log\n\nAP2: revisit R1: Detailed methodology\n\nRealign analysis objectives with project objectives\nAssess feasibility through exploration\nIdentify limitations and enumerate implications\nJustify methodological adapatations\nIteratively build R6: data pipeline\nDocument final data pipeline\nFinalize methodology\n\n\n\nPublish\n\n\nAP3: Schedule of deliverable outputs\n\nR7: Analysis outputs"
   },
   {
+    "objectID": "viz.html#recomended-reading",
+    "href": "viz.html#recomended-reading",
+    "title": "Visualization",
+    "section": "Recomended Reading",
+    "text": "Recomended Reading\nMost of the recommended readings in this section focus on the conceptual approach to tackling visualization problems. This is intentional, since designing the right visualization is by far the deeper and more complex challenge than instructing a computer how to make it.\n\nAndrew Heiss, Data Visualization\nA thorough yet accessible free course on data visualization in general, illustrated with practical applications in R and ggplot.\n\n\nEdward Tufte, The Visual Display of Quantitative Information\nThe way that information is visualized in academia, business, and the media makes Edward Tufte sick. In this book, he explains what makes him mad, why it infuriates him so, and how it could be different. While his puritanical minimalism often overshoots its target (occasionally at the expense of clarity), it will transform the way you think about designing charts, tables, and maps for the better.\n\n\nAlberto Cairo, The Functional Art\nCairo comes from a similar philosophical perspective as Tufte, but is in turns more pragmatic, patient, and permissive. Instead of characterizing any non-informative or redundant element of a visualization as ‘chart-junk’, he develops a useful concept of the different objectives visualizations can be designed to achieve, and discussses the tradeoff between depth and familiarity with a good deal more nuance.\n\n\nHadley Wickham et al, ggplot2\nAn in-depth guide to ggplot2, the standard software package for visualization at Blueprint."
+  },
+  {
+    "objectID": "viz-why.html#exploration",
+    "href": "viz-why.html#exploration",
+    "title": "6  Why Visualize?",
+    "section": "6.1 Exploration",
+    "text": "6.1 Exploration\n\ntesting your prior expectations about the data\nidentifying patterns and relationships\nvisually confirming the results of processing"
+  },
+  {
+    "objectID": "viz-why.html#presentation",
+    "href": "viz-why.html#presentation",
+    "title": "6  Why Visualize?",
+    "section": "6.2 Presentation",
+    "text": "6.2 Presentation\n\nsupporting an argument\nanchoring an explanation\nimpactfully illustrating a comparison"
+  },
+  {
+    "objectID": "viz-how.html#for-exploration",
+    "href": "viz-how.html#for-exploration",
+    "title": "7  How to Visualize",
+    "section": "7.1 For exploration",
+    "text": "7.1 For exploration"
+  },
+  {
+    "objectID": "viz-how.html#for-presentation",
+    "href": "viz-how.html#for-presentation",
+    "title": "7  How to Visualize",
+    "section": "7.2 For presentation",
+    "text": "7.2 For presentation"
+  },
+  {
+    "objectID": "viz-how.html#ggplot2",
+    "href": "viz-how.html#ggplot2",
+    "title": "7  How to Visualize",
+    "section": "7.3 ggplot2",
+    "text": "7.3 ggplot2"
+  },
+  {
+    "objectID": "viz-how.html#other-software",
+    "href": "viz-how.html#other-software",
+    "title": "7  How to Visualize",
+    "section": "7.4 Other software",
+    "text": "7.4 Other software"
+  },
+  {
+    "objectID": "sd.html",
+    "href": "sd.html",
+    "title": "Developing Your Skills",
+    "section": "",
+    "text": "This chapter is currently under active development. Use its content as it is helpful, but please moderate your expectations. If you’re interested in helping out with its development, head over to the repo\n\n\n\nThe Blueprint Data Lab’s mandate is not merely to ensure that our firm remains on the cutting edge of data-driven solutions, but also to foster an environment of growth, learning, and curiosity. The world of data is continuously evolving, with new techniques, technologies, and paradigms emerging regularly. As such, continuous learning across the organization is not only beneficial but critical for us to remain adept and agile in navigating the complex challenges we find ourselves faced with every day.\nTo thrive in our work, we must harness the , using it to shape insights and drive decision-making. Developing our skills in four main areas—programming, statistics, analysis, and visualization—is thus integral to our work as consultants. These are the pillars of data literacy that form the foundation of our professional expertise.\n\nProgramming: In an age where automation is king, knowing how to code is essential. Programming allows us to extract, clean, process, and manipulate data with precision and speed. It opens up vast possibilities for data exploration and analysis that manual methods simply cannot match.\nStatistics: This is the language of data. It provides the mathematical framework for understanding, interpreting, and making inferences from data. A solid grounding in statistics is necessary for us to distill sense from the noisy world of raw data and to validate the insights we generate.\nAnalysis: This skill involves putting the tools of programming and the principles of statistics to work together. It’s about identifying patterns and trends, solving problems, and making meaning. It’s an investigative process that demands both rigorous scientific thinking and creative intuition.\nVisualization: It’s one thing to find insights in data; it’s another to communicate them effectively. Data visualization is about using graphical representations to tell the story of the data in a way that is intuitive and compelling. It bridges the gap between data experts and non-experts, making our insights accessible to all.\nEquity: In alignment with Blueprint’s core values, we must do our best to ensure that our data analysis forwards the goals of a more equitable and just society. This means more than just identifying and mitigating the analytical risks posed by structural, societal, and methodological biases. It means situating any data analysis we carry out within an anti-oppression (anti-racist, anti-colonialist, anti-ablist) philosophical framework.\n\nIn this chapter, “Developing Your Skills,” you’ll find a curated list of resources designed to help you strengthen these four pillars. They range from introductory courses for those new to the field, to advanced readings for seasoned professionals seeking to deepen their knowledge. Each resource has been carefully selected based on its educational value, practical relevance, and alignment with our firm’s work and values.\nRemember, as professionals in a field that’s ever-changing, our learning journey never ends. It’s my hope that this resource guide will inspire you to continuously cultivate your skills, innovate in your work, and strive towards mastery. With the right tools, the right mindset, and a dedication to lifelong learning, there’s no limit to the impact we can achieve.\nWelcome to this exciting chapter of your professional development."
+  },
+  {
+    "objectID": "sd-courses.html",
+    "href": "sd-courses.html",
+    "title": "9  Courses",
+    "section": "",
+    "text": "Programming Languages\nNand2Tetris\nAlgorithms\nStatistical Rethinking\nBayesian Statistics\nComputational Methods for Social Science Data\nMicroeconomics for Public Policy"
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
