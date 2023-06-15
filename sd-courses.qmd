@@ -1,0 +1,15 @@
+# Courses
+
+[Programming Languages](https://www.coursera.org/learn/programming-languages)
+
+[Nand2Tetris](https://www.coursera.org/learn/build-a-computer)
+
+[Algorithms](https://www.coursera.org/learn/algorithms-divide-conquer)
+
+[Statistical Rethinking](https://github.com/rmcelreath/stat_rethinking_2023)
+
+[Bayesian Statistics](https://bayess23.classes.andrewheiss.com/)
+
+[Computational Methods for Social Science Data](https://www.roger-beecham.com/comp-sds/class/)
+
+[Microeconomics for Public Policy](https://econs23.classes.andrewheiss.com/content/)

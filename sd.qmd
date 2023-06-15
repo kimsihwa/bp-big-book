@@ -13,18 +13,18 @@ These are the pillars of data literacy that form the foundation of our professio
 - **Programming**: In an age where automation is king, knowing how to code is essential. 
 Programming allows us to extract, clean, process, and manipulate data with precision and speed. 
 It opens up vast possibilities for data exploration and analysis that manual methods simply cannot match.
-
 - **Statistics**: This is the language of data. 
 It provides the mathematical framework for understanding, interpreting, and making inferences from data. 
 A solid grounding in statistics is necessary for us to distill sense from the noisy world of raw data and to validate the insights we generate.
-
 - **Analysis**: This skill involves putting the tools of programming and the principles of statistics to work together. 
-It's about forming and testing hypotheses, spotting patterns and trends, making predictions, and solving problems. 
+It's about identifying patterns and trends, solving problems, and making meaning. 
 It's an investigative process that demands both rigorous scientific thinking and creative intuition.
-
 - **Visualization**: It's one thing to find insights in data; it's another to communicate them effectively. 
 Data visualization is about using graphical representations to tell the story of the data in a way that is intuitive and compelling. 
 It bridges the gap between data experts and non-experts, making our insights accessible to all.
+- **Equity**: In alignment with Blueprint's core values, we must do our best to ensure that our data analysis forwards the goals of a more equitable and just society. 
+This means more than just identifying and mitigating the analytical risks posed by structural, societal, and methodological biases. 
+It means situating any data analysis we carry out within an anti-oppression (anti-racist, anti-colonialist, anti-ablist) philosophical framework.
 
 In this chapter, "**Developing Your Skills**," you'll find a curated list of resources designed to help you strengthen these four pillars. 
 They range from introductory courses for those new to the field, to advanced readings for seasoned professionals seeking to deepen their knowledge. 
