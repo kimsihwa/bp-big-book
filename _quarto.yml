@@ -24,6 +24,7 @@ book:
         - wf-structure.qmd
         - wf-basic.qmd
         - wf-goal.qmd
+        - wf-pilots.qmd
     
     - part: viz.qmd
       chapters:
