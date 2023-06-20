@@ -98,18 +98,25 @@
     "text": "The R console, where you execute R commands, is not the same as the Terminal (a.k.a. Shell, Command Prompt) You may not have used the terminal before, but you should be able to access it within your RStudio interface. See again Happy Git for more detail.↩︎\nDo your best to include a commit message every time you make a commit. Git requires that every commit have an accompanying message, and if you don’t provide in the shell directly, it will send you to vim, a much more confusing program.↩︎"
   },
   {
+    "objectID": "wf-getting-help.html#general-approach",
+    "href": "wf-getting-help.html#general-approach",
+    "title": "5  Getting Help",
+    "section": "5.1 General Approach",
+    "text": "5.1 General Approach\nThe Data Lab team is here to help you succeed in your work. Each of us is a subject matter expert in one or more areas of data analysis, and we’re happy to share our knowledge with you, whether you’re a new analyst or a seasoned pro. However, we’re also a small team, and we have a lot of work to do. This process is designed to help us help you and future analysts with similar questions as efficiently as possible. If you follow it, you’ll get the help you need faster, and you’ll be a part of building our collective knowledge base.\n\n\n\n\n\n\n\nD\n\n  \n\nconsult\n\n Consult available resources   \n\nif_exists\n\n Does a solution already exist?   \n\nconsult-&gt;if_exists\n\n    \n\nyes_exists\n\n Use existing solution   \n\nif_exists-&gt;yes_exists\n\n  Yes   \n\nno_exists\n\n Request help   \n\nif_exists-&gt;no_exists\n\n  No   \n\ndesc\n\n Describe the problem   \n\nno_exists-&gt;desc\n\n    \n\nclarify\n\n Clarify the problem   \n\ndesc-&gt;clarify\n\n    \n\ncollab\n\n Collaborate on a solution   \n\nclarify-&gt;collab\n\n    \n\ndocument\n\n Document the solution for future reference   \n\ncollab-&gt;document\n\n   \n\n\n\n\n\n\n5.1.1 Consult Available Resources\nBefore you ask for help, take a moment to consider whether a solution already exists. This website is still under construction, but it will eventually contain a wealth of information about the tools and processes we use. If you’re having trouble with a particular tool, check the documentation for that tool. If you are looking for a statistical method to answer a particular question or achieve a specific result, find reference papers that answer similar questions with similar data. If you find a solution that fits your use case, great! you’re done, but even if you don’t, the information you gather will help you describe your problem to the Data Lab team, and point us very specifically in the right direction to help you.\n\n\n5.1.2 Request Help\nIf you can’t find a solution to your problem, it’s time to ask for help. Request help by emailing / slacking one of the Data Lab support team members directly, or by posting a message in the #data-help channel on Slack.\n\n\n\n\n\n\nData Lab support team\n\n\n\n\nThomas McManus\nAlex Rand\n\n\n\n\n\n5.1.3 Describe the Problem\nA problem description will be most useful if it answers these questions:\n\nWhat are you trying to do?\nWhat have you tried so far?\nWhat happened when you tried it?\nWhat do you think should have happened instead?\nWhat is your best guess about the shape, nature, or source of the solution?\n\nThe more specific you can be, the better, but don’t worry if you don’t know the answers to all of these questions. Getting help is a collaborative process, and we’ll work with you to fill in the gaps in your knowledge.\n\n\n\n\n\n\nReproducible Examples (Reprexes)\n\n\n\nFor problems that involve code, the best way to describe your problem is to provide a reproducible example, or reprex. A reprex is a minimal, self-contained example that demonstrates the problem you’re having. It should be as simple as possible, but no simpler. It should run on any machine with the right software, and it should produce the same error or unexpected result that you’re seeing in your own work.\nFor more information on how to create a reprex, see the Reprex chapter of the Tidyverse Reprex Guide.\n\n\n\n\n5.1.4 Clarify the Problem\nOnce you’ve described your problem, we’ll partner you with a Data Lab team member who has the right expertise to help you. They’ll work with you to ensure that they understand your problem and the context in which it arose. If they need more information, they’ll ask you for it. If they need to see your code, they’ll ask you to share it. If more help is needed, they’ll bring in other team members with the right expertise.\n\n\n5.1.5 Collaborate on a Solution\nOnce we understand your problem, we’ll work with you to find a solution.\n\n\n5.1.6 Document the Solution for Future Reference\nUnless your problem is highly specific to your project, we’ll ask for your help to document the solution for future reference."
+  },
+  {
     "objectID": "wf-goal.html",
     "href": "wf-goal.html",
-    "title": "5  Advanced / Aspirational Workflow",
+    "title": "6  Advanced / Aspirational Workflow",
     "section": "",
     "text": "This section is still quite rough. If you’re here, you’re welcome to drop suggested changes, additions, or clarifications in the comments. Your input will be incorporated into the development process.\n\n\n\nBolded items are clear hooks for tools, rules, standards.\nAP[X] is the Xth analysis planning stage R[X] is the Xth artefact of the analysis process\n\nPre-contract\n\n\nProposal\nResearch objectives\nAP0: Preliminary plan\n\nR0: High-level methodology\n\n\n\nData design\n\n\nSurvey designs\nAdmin datasets\nAP1: Specify approach\n\nR1: Detailed methodology\nR2: Input data dictionary\n\n\n\nData collection\n\n\nMonitoring:\n\nR3: Monitoring log\n\n\n\nAnalyze\n\n\nHave the data for the analysis\nHave accumulated insights\nHave monitoring logs\nExplore loop:\n\nR4: Exploratory output pile\nR5: Decision log\n\nAP2: revisit R1: Detailed methodology\n\nRealign analysis objectives with project objectives\nAssess feasibility through exploration\nIdentify limitations and enumerate implications\nJustify methodological adapatations\nIteratively build R6: data pipeline\nDocument final data pipeline\nFinalize methodology\n\n\n\nPublish\n\n\nAP3: Schedule of deliverable outputs\n\nR7: Analysis outputs"
   },
   {
     "objectID": "wf-pilots.html#using-github-issues-to-host-a-projects-decision-log",
     "href": "wf-pilots.html#using-github-issues-to-host-a-projects-decision-log",
-    "title": "6  Workflow Pilots",
-    "section": "6.1 Using Github Issues to Host a Project’s Decision Log",
-    "text": "6.1 Using Github Issues to Host a Project’s Decision Log\n\n\n\nMeta\ndata\n\n\n\n\nproject\nFSC Benchmarks\n\n\nrepo\nalex-rand/fsc-benchmarks\n\n\ncontact\n(alex-rand?)\n\n\n\n\n6.1.1 What is the practice?\n\nuse Github’s Issues tracker to:\n\nask and answer questions about program, data, and methods\ncollaboratively arrive at decisions about the best path forward\nlabel conversations to help others focus their contributions\n\nconnect tasks (branches, pull requests) to the conversations that produced them\n\n\n\n6.1.2 Why is it good?\n\nlives in an obvious, highly accessible place attached to the project’s repo\nenables transparent, asynchronous, collaborative decision-making\norganically documents that process\nprovides an intuitive interface for tracking down the rationale for decisions which would otherwise be forgotten\nlabels make it easy to highlight issues for specific team members or cross-functional collaborators\ncode reviewers have a clear first stop for answering questions about decisions reflected in the code they’re reviewing\n\n\n\n6.1.3 What does it look like?\n\n6.1.3.1 Browsing open issues\n\n\n\nA List of Github Issues\n\n\n\n\n6.1.3.2 Filtering for the ones you might be able to help with\n\n\n\nFiltered list of Gihub Issues\n\n\n\n\n6.1.3.3 An active discussion\n\n\n\nDiscussing issue #30\n\n\n\n\n6.1.3.4 Making a branch for work associated with an issue\n\n\n\nCreating a branch connected to the issue\n\n\n\n\n6.1.3.5 Searching past issues\n\n\n\nSearching through closed issues"
+    "title": "7  Workflow Pilots",
+    "section": "7.1 Using Github Issues to Host a Project’s Decision Log",
+    "text": "7.1 Using Github Issues to Host a Project’s Decision Log\n\n\n\nMeta\ndata\n\n\n\n\nproject\nFSC Benchmarks\n\n\nrepo\nalex-rand/fsc-benchmarks\n\n\ncontact\n(alex-rand?)\n\n\n\n\n7.1.1 What is the practice?\n\nuse Github’s Issues tracker to:\n\nask and answer questions about program, data, and methods\ncollaboratively arrive at decisions about the best path forward\nlabel conversations to help others focus their contributions\n\nconnect tasks (branches, pull requests) to the conversations that produced them\n\n\n\n7.1.2 Why is it good?\n\nlives in an obvious, highly accessible place attached to the project’s repo\nenables transparent, asynchronous, collaborative decision-making\norganically documents that process\nprovides an intuitive interface for tracking down the rationale for decisions which would otherwise be forgotten\nlabels make it easy to highlight issues for specific team members or cross-functional collaborators\ncode reviewers have a clear first stop for answering questions about decisions reflected in the code they’re reviewing\n\n\n\n7.1.3 What does it look like?\n\n7.1.3.1 Browsing open issues\n\n\n\nA List of Github Issues\n\n\n\n\n7.1.3.2 Filtering for the ones you might be able to help with\n\n\n\nFiltered list of Gihub Issues\n\n\n\n\n7.1.3.3 An active discussion\n\n\n\nDiscussing issue #30\n\n\n\n\n7.1.3.4 Making a branch for work associated with an issue\n\n\n\nCreating a branch connected to the issue\n\n\n\n\n7.1.3.5 Searching past issues\n\n\n\nSearching through closed issues"
   },
   {
     "objectID": "viz.html#recomended-reading",
@@ -121,44 +128,44 @@
   {
     "objectID": "viz-why.html#exploration",
     "href": "viz-why.html#exploration",
-    "title": "7  Why Visualize?",
-    "section": "7.1 Exploration",
-    "text": "7.1 Exploration\n\ntesting your prior expectations about the data\nidentifying patterns and relationships\nvisually confirming the results of processing"
+    "title": "8  Why Visualize?",
+    "section": "8.1 Exploration",
+    "text": "8.1 Exploration\n\ntesting your prior expectations about the data\nidentifying patterns and relationships\nvisually confirming the results of processing"
   },
   {
     "objectID": "viz-why.html#presentation",
     "href": "viz-why.html#presentation",
-    "title": "7  Why Visualize?",
-    "section": "7.2 Presentation",
-    "text": "7.2 Presentation\n\nsupporting an argument\nanchoring an explanation\nimpactfully illustrating a comparison"
+    "title": "8  Why Visualize?",
+    "section": "8.2 Presentation",
+    "text": "8.2 Presentation\n\nsupporting an argument\nanchoring an explanation\nimpactfully illustrating a comparison"
   },
   {
     "objectID": "viz-how.html#for-exploration",
     "href": "viz-how.html#for-exploration",
-    "title": "8  How to Visualize",
-    "section": "8.1 For exploration",
-    "text": "8.1 For exploration"
+    "title": "9  How to Visualize",
+    "section": "9.1 For exploration",
+    "text": "9.1 For exploration"
   },
   {
     "objectID": "viz-how.html#for-presentation",
     "href": "viz-how.html#for-presentation",
-    "title": "8  How to Visualize",
-    "section": "8.2 For presentation",
-    "text": "8.2 For presentation"
+    "title": "9  How to Visualize",
+    "section": "9.2 For presentation",
+    "text": "9.2 For presentation"
   },
   {
     "objectID": "viz-how.html#ggplot2",
     "href": "viz-how.html#ggplot2",
-    "title": "8  How to Visualize",
-    "section": "8.3 ggplot2",
-    "text": "8.3 ggplot2"
+    "title": "9  How to Visualize",
+    "section": "9.3 ggplot2",
+    "text": "9.3 ggplot2"
   },
   {
     "objectID": "viz-how.html#other-software",
     "href": "viz-how.html#other-software",
-    "title": "8  How to Visualize",
-    "section": "8.4 Other software",
-    "text": "8.4 Other software"
+    "title": "9  How to Visualize",
+    "section": "9.4 Other software",
+    "text": "9.4 Other software"
   },
   {
     "objectID": "sd.html",
@@ -170,7 +177,7 @@
   {
     "objectID": "sd-courses.html",
     "href": "sd-courses.html",
-    "title": "10  Courses",
+    "title": "11  Courses",
     "section": "",
     "text": "Programming Languages\nNand2Tetris\nAlgorithms\nStatistical Rethinking\nBayesian Statistics\nComputational Methods for Social Science Data\nMicroeconomics for Public Policy"
   },
