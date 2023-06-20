@@ -1,0 +1,99 @@
+# Getting Help
+
+{{< include content/_wip.qmd >}}
+
+As a data analyst at Blueprint, your scope of work can extend from analysis planning through data wrangling to reporting.
+In the planning stages, you'll need to be confident that you can design, execute, explain and justify an effective methodology. 
+As you're gathering and manipulating input data, you will be asked to work with a variety of systems, each with their own technical quirks. 
+Once the analysis is concluded, you'll work with your colleagues to create visualizations and tables that highlight the key results on which the project's reporting depends. 
+At each stage, the Data Lab is here to help. 
+
+This chapter offers high-level guidance on the best approach for asking for any kind of help, along with considerations for specific kinds of requests. 
+
+## General Approach
+
+The Data Lab team is here to help you succeed in your work. 
+Each of us is a subject matter expert in one or more areas of data analysis, and we're happy to share our knowledge with you, whether you're a new analyst or a seasoned pro. 
+However, we're also a small team, and we have a lot of work to do. 
+This process is designed to help us help you and future analysts with similar questions as efficiently as possible.
+If you follow it, you'll get the help you need faster, and you'll be a part of building our collective knowledge base. 
+
+```{dot}
+#| caption: "General Approach to Getting Help"
+digraph D {
+    consult [label="Consult available resources"];
+    if_exists [label="Does a solution already exist?", shape=diamond];
+    yes_exists [label="Use existing solution"];
+    no_exists [label="Request help"];
+    desc [label="Describe the problem"];
+    clarify [label="Clarify the problem"];
+    collab [label="Collaborate on a solution"];
+    document [label="Document the solution for future reference"];
+
+    consult -> if_exists;
+    if_exists -> yes_exists [label="Yes"];
+    if_exists -> no_exists [label="No"];
+    no_exists -> desc;
+    desc -> clarify;
+    clarify -> collab;
+    collab -> document;
+}
+```
+
+
+### Consult Available Resources
+
+Before you ask for help, take a moment to consider whether a solution already exists.
+This website is still under construction, but it will eventually contain a wealth of information about the tools and processes we use.
+If you're having trouble with a particular tool, check the documentation for that tool.
+If you are looking for a statistical method to answer a particular question or achieve a specific result, find reference papers that answer similar questions with similar data.
+If you find a solution that fits your use case, great! you're done, 
+but even if you don't, the information you gather will help you describe your problem to the Data Lab team, and point us very specifically in the right direction to help you.
+
+### Request Help
+
+If you can't find a solution to your problem, it's time to ask for help.
+Request help by emailing / slacking one of the Data Lab support team members directly, or by posting a message in the `#data-help` channel on Slack.
+
+:::{.callout-note}
+## Data Lab support team
+
+{{< include content/_data-lab-support-team.qmd >}}
+:::
+
+### Describe the Problem
+
+A problem description will be most useful if it answers these questions:
+
+- What are you trying to do?
+- What have you tried so far?
+- What happened when you tried it?
+- What do you think should have happened instead?
+- What is your best guess about the shape, nature, or source of the solution?
+
+The more specific you can be, the better, but don't worry if you don't know the answers to all of these questions.
+Getting help is a collaborative process, and we'll work with you to fill in the gaps in your knowledge.
+
+:::{.callout-note}
+## Reproducible Examples (Reprexes)
+
+For problems that involve code, the best way to describe your problem is to provide a reproducible example, or reprex. A reprex is a minimal, self-contained example that demonstrates the problem you're having. It should be as simple as possible, but no simpler. It should run on any machine with the right software, and it should produce the same error or unexpected result that you're seeing in your own work.
+
+For more information on how to create a reprex, see the [Reprex chapter](https://reprex.tidyverse.org/articles/articles/reprex.html) of the [Tidyverse Reprex Guide](https://reprex.tidyverse.org/).
+:::
+
+### Clarify the Problem
+
+Once you've described your problem, we'll partner you with a Data Lab team member who has the right expertise to help you. 
+They'll work with you to ensure that they understand your problem and the context in which it arose.
+If they need more information, they'll ask you for it.
+If they need to see your code, they'll ask you to share it. 
+If more help is needed, they'll bring in other team members with the right expertise.
+
+### Collaborate on a Solution
+
+Once we understand your problem, we'll work with you to find a solution.
+
+### Document the Solution for Future Reference
+
+Unless your problem is highly specific to your project, we'll ask for your help to document the solution for future reference.

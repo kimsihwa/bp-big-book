@@ -23,6 +23,7 @@ book:
         - wf-git.qmd
         - wf-structure.qmd
         - wf-basic.qmd
+        - wf-getting-help.qmd
         - wf-goal.qmd
         - wf-pilots.qmd
     
