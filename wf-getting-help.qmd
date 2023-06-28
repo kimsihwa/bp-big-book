@@ -92,9 +92,9 @@ Once we understand your problem, we'll work with you to find a solution. This wi
 
 ### Document the Solution for Future Reference
 
-Unless your problem is highly specific to your project, we'll ask for your help to document the solution for future reference. Most likely this will be in the form of a .qmd Quarto document to be integrated into this book?
+Unless your problem is highly specific to your project, we'll ask for your help to document the solution for future reference. Most likely this will be in the form of a .qmd Quarto document to be integrated into this book, but this may vary on a case-by-case basis. 
 
-To write a well-documented solution you can follow these steps:
+To write good documentation for your solution you can follow these steps:
 
 1.  **Capture the context:** Start by providing a brief overview of the problem you were trying to solve. Describe the specific scenario, project, or task that led to the issue. Include any relevant background information, data sources, or dependencies that influenced the solution.
 
