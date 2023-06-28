@@ -2,21 +2,13 @@
 
 {{< include content/_wip.qmd >}}
 
-As a data analyst at Blueprint, your scope of work can extend from analysis planning through data wrangling to reporting.
-In the planning stages, you'll need to be confident that you can design, execute, explain and justify an effective methodology. 
-As you're gathering and manipulating input data, you will be asked to work with a variety of systems, each with their own technical quirks. 
-Once the analysis is concluded, you'll work with your colleagues to create visualizations and tables that highlight the key results on which the project's reporting depends. 
-At each stage, the Data Lab is here to help. 
+As a data analyst at Blueprint, your scope of work can extend from analysis planning through data wrangling to reporting. In the planning stages, you'll need to be confident that you can design, execute, explain and justify an effective methodology. As you're gathering and manipulating input data, you will be asked to work with a variety of systems, each with their own technical quirks. Once the analysis is concluded, you'll work with your colleagues to create visualizations and tables that highlight the key results on which the project's reporting depends. At each stage, the Data Lab is here to help.
 
-This chapter offers high-level guidance on the best approach for asking for any kind of help, along with considerations for specific kinds of requests. 
+This chapter offers high-level guidance on the best approach for asking for any kind of help, along with considerations for specific kinds of requests.
 
 ## General Approach
 
-The Data Lab team is here to help you succeed in your work. 
-Each of us is a subject matter expert in one or more areas of data analysis, and we're happy to share our knowledge with you, whether you're a new analyst or a seasoned pro. 
-However, we're also a small team, and we have a lot of work to do. 
-This process is designed to help us help you and future analysts with similar questions as efficiently as possible.
-If you follow it, you'll get the help you need faster, and you'll be a part of building our collective knowledge base. 
+The Data Lab team is here to help you succeed in your work. Each of us is a subject matter expert in one or more areas of data analysis, and we're happy to share our knowledge with you, whether you're a new analyst or a seasoned pro. However, we're also a small team, and we have a lot of work to do. This process is designed to help us help you (and future analysts with similar questions) find solutions as efficiently as possible. If you follow it, you'll get the help you need faster, and you'll be a part of building our collective knowledge base.
 
 ```{dot}
 #| caption: "General Approach to Getting Help"
@@ -40,22 +32,27 @@ digraph D {
 }
 ```
 
-
 ### Consult Available Resources
 
-Before you ask for help, take a moment to consider whether a solution already exists.
-This website is still under construction, but it will eventually contain a wealth of information about the tools and processes we use.
-If you're having trouble with a particular tool, check the documentation for that tool.
-If you are looking for a statistical method to answer a particular question or achieve a specific result, find reference papers that answer similar questions with similar data.
-If you find a solution that fits your use case, great! you're done, 
-but even if you don't, the information you gather will help you describe your problem to the Data Lab team, and point us very specifically in the right direction to help you.
+Before you ask for help, take a moment to consider whether a solution already exists. This website is still under construction, but it will eventually contain a wealth of information about the tools and processes we use. If you're having trouble with a particular tool, check the documentation for that tool. If you are looking for a statistical method to answer a particular question or achieve a specific result, find reference papers that answer similar questions with similar data. If you find a solution that fits your use case, great! you're done, but even if you don't, the information you gather will help you describe your problem to the Data Lab team, and point us very specifically in the right direction to help you.
+
+Which resources should you check before asking for help? Here are some options:
+
+-   **ChatGPT:** This is the first place you should go if you run into a coding issue or are unsure how to accomplish a particular task. ChatGPT is proficient in writing R code, so you can describe your coding issue or the task you want to accomplish, and it can provide you with the code or guide you on how to approach the problem yourself. It often makes small coding errors for more complex tasks, but if you show it the error then it can often fix the code it wrote previously.
+
+-   **Stack Overflow:** This is a popular question-and-answer website for programming-related queries, including R. It has a vast community of developers who actively participate in discussions and provide solutions to various coding problems. You can search for R-related questions using specific tags or keywords and explore existing answers or ask new questions if you couldn't find a suitable solution. A Google search for 'Stack Overflow \[your question here\]' will usually turn up lots of helpful discussions, unless the question is very niche.
+
+-   **R Documentation:** The official R documentation can be a bit technical, but it is a comprehensive resource that provides information about R packages, functions, and their usage. You can access it online or directly from the R console using the help() or ? command followed by the package or function name. For example, running the R command `help(dplyr)` or `?dplyr` will cause information about the dplyr package to pop up in your RStudio window.
+
+-   **CRAN (Comprehensive R Archive Network):** CRAN is a network of servers that host R packages. It is the place R packages live, along with detailed PDF files documenting every function in a package, and examples (sometimes called 'vignettes') written by the package creator to demonstrate common use-cases for the functions in a package. You can visit the CRAN website (https://cran.r-project.org/) to search for packages related to your specific needs, or a Google search for something like '\[this package\] vignettes' or '\[this package\] documentation PDF' will turn up what you're looking for.
+
+These resources can enhance your understanding of R, improve your problem-solving skills, and empower you to overcome coding challenges on your own. But they can take some time to get used to. If these resources don't seem to be giving you what you need, or if you'd just prefer to talk over the problem with a real person, **don't hesitate to reach out to the Data Lab team for support.**
 
 ### Request Help
 
-If you can't find a solution to your problem, it's time to ask for help.
-Request help by emailing / slacking one of the Data Lab support team members directly, or by posting a message in the `#data-help` channel on Slack.
+If you can't find a solution to your problem, it's time to ask for help. Request help by emailing / slacking one of the Data Lab support team members directly, or by posting a message in the `#data-help` channel on Slack.
 
-:::{.callout-note}
+::: callout-note
 ## Data Lab support team
 
 {{< include content/_data-lab-support-team.qmd >}}
@@ -65,16 +62,15 @@ Request help by emailing / slacking one of the Data Lab support team members dir
 
 A problem description will be most useful if it answers these questions:
 
-- What are you trying to do?
-- What have you tried so far?
-- What happened when you tried it?
-- What do you think should have happened instead?
-- What is your best guess about the shape, nature, or source of the solution?
+-   What are you trying to do?
+-   What have you tried so far?
+-   What happened when you tried it?
+-   What do you think should have happened instead?
+-   What is your best guess about the shape, nature, or source of the solution?
 
-The more specific you can be, the better, but don't worry if you don't know the answers to all of these questions.
-Getting help is a collaborative process, and we'll work with you to fill in the gaps in your knowledge.
+The more specific you can be, the better, but don't worry if you don't know the answers to all of these questions. Getting help is a collaborative process, and we'll work with you to fill in the gaps in your knowledge.
 
-:::{.callout-note}
+::: callout-note
 ## Reproducible Examples (Reprexes)
 
 For problems that involve code, the best way to describe your problem is to provide a reproducible example, or reprex. A reprex is a minimal, self-contained example that demonstrates the problem you're having. It should be as simple as possible, but no simpler. It should run on any machine with the right software, and it should produce the same error or unexpected result that you're seeing in your own work.
@@ -84,16 +80,30 @@ For more information on how to create a reprex, see the [Reprex chapter](https:/
 
 ### Clarify the Problem
 
-Once you've described your problem, we'll partner you with a Data Lab team member who has the right expertise to help you. 
-They'll work with you to ensure that they understand your problem and the context in which it arose.
-If they need more information, they'll ask you for it.
-If they need to see your code, they'll ask you to share it. 
-If more help is needed, they'll bring in other team members with the right expertise.
+Once you've described your problem, we'll partner you with a Data Lab team member who has the right expertise to help you. They'll work with you to ensure they understand your problem and the context in which it arose. If they need more information, they'll ask you for it. If they need to see your code, they'll ask you to share it. If more help is needed, they'll bring in other team members with the right expertise.
 
 ### Collaborate on a Solution
 
-Once we understand your problem, we'll work with you to find a solution.
+Once we understand your problem, we'll work with you to find a solution. This will be a collaborative, iterative process -- we'll likely need to go back-and-forth with you a few times before we find the answer we need. It will look something like this:
+
+1.  **Think of a possible solution:** A Data Lab team member will propose a solution or a few possible solutions to address the problem. The Data Lab team member will explain the rationale behind each approach, and together you'll decide how best to try them out. You should feel free to ask lots of questions at this stage.
+
+2.  **Experiment and get feedback:** Together with the Data Lab team member, you can experiment with the proposed solutions, implementing changes to the code as necessary. It's important to communicate the outcome of each thing you try, sharing any error messages, unexpected outputs, or progress made. This iterative feedback loop helps to narrow down potential solutions and uncover any unforeseen challenges.
 
 ### Document the Solution for Future Reference
 
-Unless your problem is highly specific to your project, we'll ask for your help to document the solution for future reference.
+Unless your problem is highly specific to your project, we'll ask for your help to document the solution for future reference. Most likely this will be in the form of a .qmd Quarto document to be integrated into this book?
+
+To write a well-documented solution you can follow these steps:
+
+1.  **Capture the context:** Start by providing a brief overview of the problem you were trying to solve. Describe the specific scenario, project, or task that led to the issue. Include any relevant background information, data sources, or dependencies that influenced the solution.
+
+2.  **Explain the approach that worked:** explain in general step-by-step terms how you solved the problem. approach or strategy used to address the problem.
+
+3.  **Include code snippets:** It will be helpful to future analysts to see the code you used to solve your problem. Highlight the specific changes made and provide comments within the code snippets to clarify their purpose and functionality.
+
+4.  **Provide examples of the successful result:** If applicable, include example outputs or results to demonstrate the successful resolution of the problem. This could include visualizations, summary statistics, or anything else the code creates.
+
+5.  **Address potential pitfalls:** Is your solution custom-tailored to your particular dataset in some way where it may not help in most other situations? Are you aware of any specific situations where your solution might not work? Identify and address potential pitfalls or limitations of the solution. Document things you think could impact the solution's applicability in different scenarios. This helps future analysts anticipate potential challenges.
+
+6.  **Include references:** If you used specific resources, tutorials, documentation, or Stack Overflow posts during the troubleshooting process, provide links to those sources. This helps ensure that even if your specific code doesn't help in some other specific situation, the future analyst will know where to look for help applying the general approach to their situation.
