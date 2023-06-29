@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blueprint Big Book of Data Analysis - 1&nbsp; Introduction</title>
+<title>Blueprint Big Book of Data Analysis - Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 
@@ -49,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wf.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./viz-why.html" rel="next">
+<link href="./wf-pilots.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +70,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+      <h1 class="quarto-secondary-nav-title">Visualization</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -126,7 +107,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -171,7 +152,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./viz.html" class="sidebar-item-text sidebar-link">Visualization</a>
+            <a href="./viz.html" class="sidebar-item-text sidebar-link active">Visualization</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -224,14 +205,26 @@ div.csl-indent {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#recomended-reading" id="toc-recomended-reading" class="nav-link active" data-scroll-target="#recomended-reading">Recomended Reading</a>
+  <ul class="collapse">
+  <li><a href="#andrew-heiss-data-visualization" id="toc-andrew-heiss-data-visualization" class="nav-link" data-scroll-target="#andrew-heiss-data-visualization">Andrew Heiss, Data Visualization</a></li>
+  <li><a href="#edward-tufte-the-visual-display-of-quantitative-information" id="toc-edward-tufte-the-visual-display-of-quantitative-information" class="nav-link" data-scroll-target="#edward-tufte-the-visual-display-of-quantitative-information">Edward Tufte, The Visual Display of Quantitative Information</a></li>
+  <li><a href="#alberto-cairo-the-functional-art" id="toc-alberto-cairo-the-functional-art" class="nav-link" data-scroll-target="#alberto-cairo-the-functional-art">Alberto Cairo, The Functional Art</a></li>
+  <li><a href="#hadley-wickham-et-al-ggplot2" id="toc-hadley-wickham-et-al-ggplot2" class="nav-link" data-scroll-target="#hadley-wickham-et-al-ggplot2">Hadley Wickham et al, ggplot2</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title d-none d-lg-block">Visualization</h1>
 </div>
 
 
@@ -246,15 +239,29 @@ div.csl-indent {
 
 </header>
 
-<p>This is a book created from markdown and executable code.</p>
-<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
+<p>This chapter offers a general introduction to data visualization at Blueprint. Before introducing the typical toolkit, corporate standards, and a gallery of examples, it attempts to speak to the purposes visualization serves in general and at Blueprint in particular.</p>
+<section id="recomended-reading" class="level2">
+<h2 class="anchored" data-anchor-id="recomended-reading">Recomended Reading</h2>
+<p>Most of the recommended readings in this section focus on the conceptual approach to tackling visualization problems. This is intentional, since designing the right visualization is by far the deeper and more complex challenge than instructing a computer how to make it.</p>
+<section id="andrew-heiss-data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="andrew-heiss-data-visualization"><a href="https://datavizm20.classes.andrewheiss.com/">Andrew Heiss, Data Visualization</a></h3>
+<p>A thorough yet accessible free course on data visualization in general, illustrated with practical applications in R and ggplot.</p>
+</section>
+<section id="edward-tufte-the-visual-display-of-quantitative-information" class="level3">
+<h3 class="anchored" data-anchor-id="edward-tufte-the-visual-display-of-quantitative-information"><a href="https://drive.google.com/file/d/11nz_mxpoYCqOsGlxpVxmhAatFm5Y1MR7/view?usp=drive_link">Edward Tufte, The Visual Display of Quantitative Information</a></h3>
+<p>The way that information is visualized in academia, business, and the media makes Edward Tufte sick. In this book, he explains what makes him mad, why it infuriates him so, and how it could be different. While his puritanical minimalism often overshoots its target (occasionally at the expense of clarity), it will transform the way you think about designing charts, tables, and maps for the better.</p>
+</section>
+<section id="alberto-cairo-the-functional-art" class="level3">
+<h3 class="anchored" data-anchor-id="alberto-cairo-the-functional-art"><a href="https://drive.google.com/file/d/15yVNyBBtWxEfSduF2IMWkza09k9_NjDY/view?usp=drive_link">Alberto Cairo, The Functional Art</a></h3>
+<p>Cairo comes from a similar philosophical perspective as Tufte, but is in turns more pragmatic, patient, and permissive. Instead of characterizing any non-informative or redundant element of a visualization as ‘chart-junk’, he develops a useful concept of the different objectives visualizations can be designed to achieve, and discussses the tradeoff between depth and familiarity with a good deal more nuance.</p>
+</section>
+<section id="hadley-wickham-et-al-ggplot2" class="level3">
+<h3 class="anchored" data-anchor-id="hadley-wickham-et-al-ggplot2"><a href="https://ggplot2-book.org/introduction.html">Hadley Wickham et al, ggplot2</a></h3>
+<p>An in-depth guide to ggplot2, the standard software package for visualization at Blueprint.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-knuth84" class="csl-entry" role="doc-biblioentry">
-Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
-</div>
-</div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -394,13 +401,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./wf-pilots.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Workflow Pilots</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wf.html" class="pagination-link">
-        <span class="nav-page-text">Workflow</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./viz-why.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Why Visualize?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -22,3 +22,4 @@ rad.json
 TestResults.xml
 /.quarto/
 /_site/
+.Rproj.user
