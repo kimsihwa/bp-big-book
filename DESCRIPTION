@@ -1,0 +1,30 @@
+Package: bpbb
+Version: 0.0.1
+Title: Blueprint Big Book
+Depends:
+    R (>= 4.3.0)
+Imports: 
+    dplyr,
+    ggplot2,
+    purrr,
+    readr,
+    stringr,
+    tidyr,
+    tibble,
+    rlang,
+    glue,
+    scales,
+    gridExtra,
+    grid,
+    ggrepel,
+    bptheme, 
+    bpscales
+Suggests:  
+    downlit,
+    knitr,
+    rmarkdown,
+    testthat,
+    covr
+Remotes: 
+    context-dependent/bptheme,
+    context-dependent/bpscales
