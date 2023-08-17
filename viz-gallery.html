@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blueprint Big Book of Data Analysis – viz-gallery</title>
+<title>Blueprint Big Book of Data Analysis - 10&nbsp; Visualization Gallery</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -65,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating fullcontent">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -74,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./viz.html">Visualization</a></li><li class="breadcrumb-item"><a href="./viz-gallery.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">viz-gallery.html</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./viz.html">Visualization</a></li><li class="breadcrumb-item"><a href="./viz-gallery.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualization Gallery</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -189,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./viz-gallery.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">viz-gallery.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualization Gallery</span></span></a>
   </div>
 </li>
       </ul>
@@ -228,14 +262,253 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#communicating-uncertainty" id="toc-communicating-uncertainty" class="nav-link active" data-scroll-target="#communicating-uncertainty"><span class="header-section-number">10.1</span> Communicating Uncertainty</a>
+  <ul class="collapse">
+  <li><a href="#example-results-ccdf-imm-effects-on-pre-employability-skills" id="toc-example-results-ccdf-imm-effects-on-pre-employability-skills" class="nav-link" data-scroll-target="#example-results-ccdf-imm-effects-on-pre-employability-skills"><span class="header-section-number">10.1.1</span> Example Results: CCDF / IMM+ effects on pre-employability skills</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Visualization Gallery</span></h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This chapter is currently under active development. Use its content as it is helpful, but please moderate your expectations. If you’re interested in helping out with its development, head over to the <a href="https://github.com/context-dependent/bp-big-book">repo</a></p>
+</div>
+</div>
+</div>
+<section id="communicating-uncertainty" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="communicating-uncertainty"><span class="header-section-number">10.1</span> Communicating Uncertainty</h2>
+<p>Communicating uncertainty is a challenge that we face when our analysis has used statistical methods to estimate the value of a coefficient. It is difficult to effectively represent uncertainty, either as a quantity or a feature of a visualization, such that readers will come away from the analysis with an understanding and a level of confidence that matches our own. It is also difficult to make meaning of uncertainty in the broader context of an analysis project, whether it be a program evaluation, a piece of policy analysis, or any other project that we might take on. However, there is a growing body of research on how to effectively communicate uncertainty, and we can use this research to guide our own efforts.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Across the sciences, communicating uncertainty is not a solved problem. This is especially true in the social sciences, where the methods we use to quantify uncertainty are often not well understood by our readers. Blueprint is specifically positioned to take a leadership role in the innovation and adoption of better practices. If you’re doing this kind of work and it feels difficult, confusing, or frustrating, that’s because it is! We encourage you to lean into that discomfort and take your time figuring out what is going to work best for your project.</p>
+</div>
+</div>
+</div>
+<section id="example-results-ccdf-imm-effects-on-pre-employability-skills" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="example-results-ccdf-imm-effects-on-pre-employability-skills"><span class="header-section-number">10.1.1</span> Example Results: CCDF / IMM+ effects on pre-employability skills</h3>
+<p>The example results are from a program evaluation of an FSC-funded randomized controlled trial of a pre-employability training program for adults on social assistance. They are estimates of the effect of the program on emotional intelligence, self-esteem, and resilience.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggdist)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(distributional)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tribble</span>(</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>outcome, <span class="sc">~</span>coefficient, <span class="sc">~</span>estimate, <span class="sc">~</span>std_error, <span class="sc">~</span>t, <span class="sc">~</span>p,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Self Esteem"</span>, <span class="st">"Intercept"</span>, .<span class="dv">6301</span>, .<span class="dv">4509</span>, <span class="fl">1.397</span>, .<span class="dv">164</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Self Esteem"</span>, <span class="st">"Treatment"</span>, <span class="fl">1.1934</span>, .<span class="dv">6148</span>, <span class="fl">1.941</span>, .<span class="dv">054</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Resilience"</span>, <span class="st">"Intercept"</span>, .<span class="dv">01716</span>, .<span class="dv">08613</span>, .<span class="dv">199</span>, .<span class="dv">842</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Resilience"</span>, <span class="st">"Treatment"</span>, .<span class="dv">15348</span>, .<span class="dv">11587</span>, <span class="fl">1.325</span>, .<span class="dv">1873</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Emotional Intelligence"</span>, <span class="st">"Intercept"</span>, <span class="sc">-</span>.<span class="dv">1618</span>, .<span class="dv">4821</span>, <span class="sc">-</span>.<span class="dv">336</span>, .<span class="dv">7377</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Emotional Intelligence"</span>, <span class="st">"Treatment"</span>, <span class="fl">1.6794</span>, .<span class="dv">6468</span>, <span class="fl">2.596</span>, .<span class="dv">0103</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="why-do-we-care-about-these-outcomes" class="level4" data-number="10.1.1.1">
+<h4 data-number="10.1.1.1" class="anchored" data-anchor-id="why-do-we-care-about-these-outcomes"><span class="header-section-number">10.1.1.1</span> Why do we care about these outcomes?</h4>
+<p>IMM+ is a pre-employability training program that is designed to bring adults on social assistance closer to the labour market. Over the course of the program, participants undertake a series of workshops and activities that are designed to improve their self-esteem, resilience, and emotional intelligence. IMM+’s theory of change holds that these three “pre-employability skills” form a critical foundation for success in the labour market.</p>
+<p>If the program successfully boosts these skills and the theory of change is correct then we should see an increase in the number of participants who eventually find and sustain employment after completing the program. Once longer term outcomes are available, we will be able to interrogate this theory of change more directly, but for now, we can look at the effect of the program on these three skills as a necessary intermediate outcome that must be achieved in order for the program to be successful. Our analysis of these outcomes will remain valuable, by enriching our understanding of the <em>mechanisms</em> by which the program achieves its impacts on employment.</p>
+</section>
+<section id="what-did-we-measure-and-how-does-it-relate" class="level4" data-number="10.1.1.2">
+<h4 data-number="10.1.1.2" class="anchored" data-anchor-id="what-did-we-measure-and-how-does-it-relate"><span class="header-section-number">10.1.1.2</span> What did we measure, and how does it relate?</h4>
+<p>Unlike employment, retention, or earnings, these outcomes are not directly observable. Instead of measuring them directly, we rely on a survey instrument that is designed to measure the underlying constructs of self-esteem, resilience, and emotional intelligence. In selecting and adapting individual psychometric scales to use in the survey, we attempted to balance the need for a comprehensive assessment of each construct with the need to keep the survey short and accessible to participants. The survey was administered to both treatment and control group participants at the beginning and end of each cohort to capture the change in each construct over the course of the program.</p>
+<section id="resilience" class="level5" data-number="10.1.1.2.1">
+<h5 data-number="10.1.1.2.1" class="anchored" data-anchor-id="resilience"><span class="header-section-number">10.1.1.2.1</span> Resilience</h5>
+<p>To measure resilience, we used the full <a href="https://measure.whatworkswellbeing.org/measures-bank/brief-resilience-scale/#:~:text=The%20Brief%20Resilience%20Scale%20was,to%205%20(high%20resilience).">Brief Resilience Scale</a>, a 6-item scale that asks participants to rate their agreement with statements like “I tend to bounce back quickly after hard times” and “I tend to lose hope easily”. Together, responses produce a score between 1 (low resilience) and 5 (high resilience).</p>
+<p>The authors provide three categories for interpreting scores: low (1.00-2.99), medium (3.00-4.30), and high (4.31-5.00). With this framing in mind, a single point increase in an individual’s score has different meanings depending on their starting point. However, the range of the scale suggests that a 1-point increase represents a meaningful change in an individual’s degree of resilience.</p>
+<p>Resilience is a big concept, with many possible senses in many possible situations. The authors of the Brief Resilience Scale define resilience as “the ability to bounce back or recover from stress”. This definition is consistent with the way that we use the term in the context of the IMM+ program, where we are interested in the ability of participants to recover from the stress inherent to the process of finding and sustaining employment.</p>
+</section>
+<section id="self-esteem" class="level5" data-number="10.1.1.2.2">
+<h5 data-number="10.1.1.2.2" class="anchored" data-anchor-id="self-esteem"><span class="header-section-number">10.1.1.2.2</span> Self-Esteem</h5>
+<p>To measure self-esteem, we used an adaptation of the <a href="https://fetzer.org/sites/default/files/images/stories/pdf/selfmeasures/Self_Measures_for_Self-Esteem_ROSENBERG_SELF-ESTEEM.pdf">Rosenberg Self-Esteem Scale</a>, from whose original 10 items we selected 6 that we felt would be most relevant in the context of the program. The resulting scale produces score that range from 6 to 30, with higher scores indicating higher self-esteem.</p>
+</section>
+<section id="emotional-intelligence" class="level5" data-number="10.1.1.2.3">
+<h5 data-number="10.1.1.2.3" class="anchored" data-anchor-id="emotional-intelligence"><span class="header-section-number">10.1.1.2.3</span> Emotional Intelligence</h5>
+<p>To measure Emotional Intelligence, we combined items from two scales: the <a href="https://www.psychometriclab.com/wp-content/uploads/2019/12/TEIQue-SF-English.pdf">Trait Emotional Intelligence Questionnaire</a> and the <a href="https://depts.washington.edu/uwcssc/sites/default/files/hw00/d40/uwcssc/sites/default/files/The%20Schutte%20Self%20Report%20Emotional%20Intelligence%20Test%20(SSEIT).pdf">Schutte Self Report Emptional Intelligence Test</a>. The resulting scale produces scores that range from 9 to 45, with higher scores indicating higher emotional intelligence.</p>
+</section>
+</section>
+<section id="what-did-we-expect" class="level4" data-number="10.1.1.3">
+<h4 data-number="10.1.1.3" class="anchored" data-anchor-id="what-did-we-expect"><span class="header-section-number">10.1.1.3</span> What did we expect?</h4>
+<p>IMM+ has shown promising results in previous evaluations, and has received strong anecdotal feedback from its participants. Participants and practioners think it works, and we expect that to born out in the data. However, we also know that each of these traits is as much a part of an individual’s personality as it is a skill that can be quickly learned and developed. We expect that the program will have a positive effect on these traits, but we do not expect the magnitude of that effect to be dramatic. Rather than a sudden change in the distribution of scores, we expect to see a shift in the mean score of the treatment group relative to the control group.</p>
+</section>
+<section id="what-did-we-see" class="level4" data-number="10.1.1.4">
+<h4 data-number="10.1.1.4" class="anchored" data-anchor-id="what-did-we-see"><span class="header-section-number">10.1.1.4</span> What did we see?</h4>
+<p>The chart below presents the average changes we observed in two ways. In the left column, the average change is measured as a percentage of the size of the scale’s range. These units are not directly comparable across outcomes, but they let us discuss the change in terms of the scale’s definition. On the right, the average change as a proportion of the scale range. These figures let us compare changes across outcomes, but they are less intuitive than the scale units.</p>
+<div class="cell" data-caption="observed changes in pre-employability skills">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dplt_01 <span class="ot">&lt;-</span> d <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(outcome, coefficient, estimate) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> coefficient, <span class="at">values_from =</span> estimate) <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">treatment_effect =</span> <span class="st">`</span><span class="at">Treatment</span><span class="st">`</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">control =</span> <span class="st">`</span><span class="at">Intercept</span><span class="st">`</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">treatment =</span> treatment_effect <span class="sc">+</span> control,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">scale_range =</span> <span class="fu">case_when</span>(</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>            outcome <span class="sc">==</span> <span class="st">"Self Esteem"</span> <span class="sc">~</span> <span class="dv">30</span> <span class="sc">-</span> <span class="dv">5</span>,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>            outcome <span class="sc">==</span> <span class="st">"Resilience"</span> <span class="sc">~</span> <span class="dv">5</span> <span class="sc">-</span> <span class="dv">0</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>            outcome <span class="sc">==</span> <span class="st">"Emotional Intelligence"</span> <span class="sc">~</span> <span class="dv">45</span> <span class="sc">-</span> <span class="dv">8</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">cols =</span> <span class="fu">c</span>(control, treatment),</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">names_to =</span> <span class="st">"group"</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">values_to =</span> <span class="st">"Scale units"</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">% of scale range</span><span class="st">`</span> <span class="ot">=</span> <span class="st">`</span><span class="at">Scale units</span><span class="st">`</span> <span class="sc">/</span> scale_range <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>        <span class="at">cols =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">Scale units</span><span class="st">`</span>, <span class="st">`</span><span class="at">% of scale range</span><span class="st">`</span>),</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        <span class="at">names_to =</span> <span class="st">"transformation"</span>,</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">values_to =</span> <span class="st">"observed_change"</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        <span class="at">transformation =</span> <span class="fu">fct_inorder</span>(transformation)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>dplt_01 <span class="sc">|&gt;</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> group, <span class="at">x =</span> observed_change)) <span class="sc">+</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_grid</span>(<span class="at">rows =</span> <span class="fu">vars</span>(outcome), <span class="at">cols =</span> <span class="fu">vars</span>(transformation), <span class="at">scales =</span> <span class="st">"free_x"</span>, <span class="at">switch =</span> <span class="st">"y"</span>) <span class="sc">+</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">xend =</span> <span class="dv">0</span>, <span class="at">yend =</span> <span class="fu">after_stat</span>(y))) <span class="sc">+</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">fill =</span> <span class="st">"#0000FF"</span>) <span class="sc">+</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text</span>(</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>        <span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(observed_change, <span class="dv">1</span>)),</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>        <span class="at">position =</span> <span class="fu">position_nudge</span>(<span class="at">y =</span> .<span class="dv">12</span>)</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>        <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(.<span class="dv">1</span>, .<span class="dv">1</span>))</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="st">"Average Change in Score"</span>,</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>    bptheme<span class="sc">::</span><span class="fu">theme_blueprint</span>(<span class="at">grid =</span> <span class="st">"Xxy"</span>, <span class="at">grid_col =</span> <span class="st">"grey80"</span>) <span class="sc">+</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">strip.placement =</span> <span class="st">"outside"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="viz-gallery_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>The treatment group’s average scores increased slightly on each of the three scales. This is consistent with our expectations, in that – compared to where they started – participants are likely to leave the program with incremental, rather than transformational improvements in these skills. Even the treatment group’s largest observed change, a 1.8 scale point (7.3 % of the scale’s range) increase in self-esteem, wouldn’t represent a change from a person with low self-esteem to a person with high self-esteem.</p>
+<p>The control group’s average resilience and emotional intelligence scores remained roughly the same, each moving by less than 1% of the scale’s range. In contrast, the average self-esteem score in the control group increased .6 points (2.5% of the scale’s range) from baseline to exit. What could explain that increase? We know that the change is not due to the program, because the control group did not participate in the program. We know that the same members of the control group completed the baseline and exit surveys, so the observed change is not due to differences in the sample.</p>
+<p>This leaves us with three plausible explanations: (1) either the change is due to chance (the control group sought out or experienced events that, on the whole, increased their self-esteem), (2) the change is due to the survey instrument itself (the survey instrument is not perfectly reliable, and the observed change is due to random variation in the instrument), or (3) an individual’s decision to enroll in IMM+ is associated with an unusually low level of self-esteem (the control group’s average self-esteem score is unusually low, and the observed change is due to regression to the mean).</p>
+</section>
+<section id="what-does-it-mean-about-ccdfs-model-in-general" class="level4" data-number="10.1.1.5">
+<h4 data-number="10.1.1.5" class="anchored" data-anchor-id="what-does-it-mean-about-ccdfs-model-in-general"><span class="header-section-number">10.1.1.5</span> What does it mean about CCDF’s model in general?</h4>
+<p>The observed changes described above tell us with certainty that the treatment group experienced improvements across the three measured pre-employability skills, and that, on average, their improvements were larger than those experienced by the control group. However, they don’t tell us what we really want to know: whether and to what extent the program should be expected to improve future participants’ pre-employability skills.</p>
+<p>The chart below presents our estimates of the intercept (average change in the control group) and the treatment effect (the additional average change in the treatment group), along with distributions that represent our uncertainty about those estimates. The chart below is structured similarly to the chart above, but with two key differences: first, instead of presenting the total change experienced by the treatment group, we present the treatment effect (the additional change experienced by the treatment group relative to the control group); second, instead of indicating what happened to the average participant, we indicate (with the shaded distributions) the extent to which we are uncertain about the true treatment effect.</p>
+<div class="cell" data-caption="estimated effects on pre-employability skills">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dplt_02 <span class="ot">&lt;-</span> d <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">scale_range =</span> <span class="fu">case_when</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>            outcome <span class="sc">==</span> <span class="st">"Self Esteem"</span> <span class="sc">~</span> <span class="dv">30</span> <span class="sc">-</span> <span class="dv">5</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>            outcome <span class="sc">==</span> <span class="st">"Resilience"</span> <span class="sc">~</span> <span class="dv">5</span> <span class="sc">-</span> <span class="dv">0</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>            outcome <span class="sc">==</span> <span class="st">"Emotional Intelligence"</span> <span class="sc">~</span> <span class="dv">45</span> <span class="sc">-</span> <span class="dv">8</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">estimate__range_pct =</span> estimate <span class="sc">/</span> scale_range <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">std_error__range_pct =</span> std_error <span class="sc">/</span> scale_range <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">estimate__scale_units =</span> estimate,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">std_error__scale_units =</span> std_error</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">cols =</span> <span class="fu">matches</span>(<span class="st">"estimate|std_error"</span>),</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">".value"</span>, <span class="st">"transformation"</span>),</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">names_pattern =</span> <span class="st">"(.*)__(.*)"</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">transformation =</span> <span class="fu">fct_inorder</span>(transformation)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>dplt_02 <span class="sc">|&gt;</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> coefficient)) <span class="sc">+</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_grid</span>(<span class="at">rows =</span> <span class="fu">vars</span>(outcome), <span class="at">cols =</span> <span class="fu">vars</span>(transformation), <span class="at">switch =</span> <span class="st">"y"</span>, <span class="at">scales =</span> <span class="st">"free_x"</span>) <span class="sc">+</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_halfeye</span>(</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>        <span class="fu">aes</span>(</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>            <span class="at">xdist =</span> <span class="fu">dist_normal</span>(estimate, std_error),</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>            <span class="at">fill =</span> <span class="fu">after_stat</span>(x <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>        <span class="at">normalize =</span> <span class="st">"panels"</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text</span>(</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>        <span class="fu">aes</span>(</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>            <span class="at">label =</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"p = {round(p, 2)}"</span>)</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="dv">0</span>,</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>        <span class="at">hjust =</span> <span class="fl">1.1</span>,</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>        <span class="at">position =</span> <span class="fu">position_nudge</span>(<span class="at">x =</span> <span class="sc">-</span>.<span class="dv">1</span>, <span class="at">y =</span> .<span class="dv">12</span>),</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"grey20"</span>, <span class="at">lty =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>        <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"grey75"</span>, <span class="st">"skyblue2"</span>),</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>        <span class="at">name =</span> <span class="st">"Effect Direction"</span>,</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>        <span class="at">breaks =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>),</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>        <span class="at">labels =</span> <span class="fu">c</span>(</span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Negative"</span>,</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Positive"</span></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>        <span class="at">guide =</span> <span class="fu">guide_legend</span>()</span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="st">"Magnitude"</span>,</span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Likelihood"</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>    bptheme<span class="sc">::</span><span class="fu">theme_blueprint</span>(<span class="at">grid =</span> <span class="st">"Xxy"</span>, <span class="at">grid_col =</span> <span class="st">"grey80"</span>) <span class="sc">+</span></span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">strip.placement =</span> <span class="st">"outside"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="viz-gallery_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Overall, we can say with confidence that the program probably had a positive effect on each of the three pre-employability skills we measured, and that it almost definitely had a positive effect on emotional intelligence.</p>
+
+
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
