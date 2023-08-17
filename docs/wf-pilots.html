@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blueprint Big Book of Data Analysis - 2&nbsp; Git and Github</title>
+<title>Blueprint Big Book of Data Analysis - 7&nbsp; Workflow Pilots</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wf-structure.html" rel="next">
-<link href="./wf.html" rel="prev">
+<link href="./viz.html" rel="next">
+<link href="./wf-goal.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git and Github</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Workflow Pilots</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wf-git.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git and Github</span></a>
+  <a href="./wf-git.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git and Github</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wf-pilots.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Workflow Pilots</span></a>
+  <a href="./wf-pilots.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Workflow Pilots</span></a>
   </div>
 </li>
       </ul>
@@ -209,9 +209,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-git-and-github" id="toc-why-git-and-github" class="nav-link active" data-scroll-target="#why-git-and-github"><span class="toc-section-number">2.1</span>  Why Git and Github?</a></li>
-  <li><a href="#gitting-rolling" id="toc-gitting-rolling" class="nav-link" data-scroll-target="#gitting-rolling"><span class="toc-section-number">2.2</span>  Gitting rolling</a></li>
-  <li><a href="#usage-at-blueprint-as-of-may-2023" id="toc-usage-at-blueprint-as-of-may-2023" class="nav-link" data-scroll-target="#usage-at-blueprint-as-of-may-2023"><span class="toc-section-number">2.3</span>  Usage at Blueprint (as of May 2023)</a></li>
+  <li><a href="#using-github-issues-to-host-a-projects-decision-log" id="toc-using-github-issues-to-host-a-projects-decision-log" class="nav-link active" data-scroll-target="#using-github-issues-to-host-a-projects-decision-log"><span class="toc-section-number">7.1</span>  Using Github Issues to Host a Project’s Decision Log</a>
+  <ul class="collapse">
+  <li><a href="#what-is-the-practice" id="toc-what-is-the-practice" class="nav-link" data-scroll-target="#what-is-the-practice"><span class="toc-section-number">7.1.1</span>  What is the practice?</a></li>
+  <li><a href="#why-is-it-good" id="toc-why-is-it-good" class="nav-link" data-scroll-target="#why-is-it-good"><span class="toc-section-number">7.1.2</span>  Why is it good?</a></li>
+  <li><a href="#what-does-it-look-like" id="toc-what-does-it-look-like" class="nav-link" data-scroll-target="#what-does-it-look-like"><span class="toc-section-number">7.1.3</span>  What does it look like?</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -220,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-wf-git" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git and Github</span></span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Workflow Pilots</span></h1>
 </div>
 
 
@@ -234,34 +237,104 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Git is a <em>version control system</em>. It tracks the changes you make and <em>commit</em> to files in a <em>local repository</em>. It lets you apply those changes to <em>remote repositories</em> hosted on services like Github.</p>
-<section id="why-git-and-github" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="why-git-and-github"><span class="header-section-number">2.1</span> Why Git and Github?</h2>
-<p>In 2017, Jennifer Bryan expanded on the ‘Why Git?’ chapter of her invaluable instructional book in the paper <a href="https://peerj.com/preprints/3159v2/"><em>Excuse me, do you have a moment to talk about version control?</em></a>. She articulates the benefits so clearly that they are not worth rephrasing:</p>
+<p>This chapter is a collection area for promising workflow practices at Blueprint. Look here to see what other printers are experimenting with right now.</p>
+<section id="using-github-issues-to-host-a-projects-decision-log" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="using-github-issues-to-host-a-projects-decision-log"><span class="header-section-number">7.1</span> Using Github Issues to Host a Project’s Decision Log</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Meta</th>
+<th style="text-align: left;">data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">project</td>
+<td style="text-align: left;">FSC Benchmarks</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">repo</td>
+<td style="text-align: left;"><a href="https://github.com/alex-rand/fsc-benchmarks/issues">alex-rand/fsc-benchmarks</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">contact</td>
+<td style="text-align: left;"><span class="citation" data-cites="alex-rand">(<a href="references.html#ref-alex-rand" role="doc-biblioref"><strong>alex-rand?</strong></a>)</span></td>
+</tr>
+</tbody>
+</table>
+<section id="what-is-the-practice" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="what-is-the-practice"><span class="header-section-number">7.1.1</span> What is the practice?</h3>
 <ul>
-<li>Doing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect.</li>
-<li>Collaboration is much more structured, with powerful tools for asynchronous work and managing versions.</li>
-<li>The marginal effort required to create a web presence for a project is negligible.</li>
-<li>By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle.</li>
-</ul>
-<p>If you have worked on a data analysis project at Blueprint, particularly one that involves collaboration, you have undoubtedly done the following:</p>
+<li>use Github’s Issues tracker to:
 <ul>
-<li>Searching for an explanation about when or why a specific choice about processing the data was made</li>
-<li>Experienced disorientation attempting to navigate someone else’s code</li>
-<li>Spent hours undoing a change that breaks the pipeline</li>
-<li>Wanted someone’s help or advice about how to solve a problem, but didn’t feel like it would be worth getting them access</li>
+<li>ask and answer questions about program, data, and methods</li>
+<li>collaboratively arrive at decisions about the best path forward</li>
+<li>label conversations to help others focus their contributions</li>
+</ul></li>
+<li>connect tasks (branches, pull requests) to the conversations that produced them</li>
 </ul>
-<p>Hosted version control like Github empowers you with tools to simplify and routinize any of these situations.</p>
 </section>
-<section id="gitting-rolling" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="gitting-rolling"><span class="header-section-number">2.2</span> Gitting rolling</h2>
-<p>At a minimum, you’ll need to <a href="https://happygitwithr.com/install-git.html">install git</a> and <a href="https://happygitwithr.com/github-acct.html">register a Github account</a>. Optionally, you can also integrate git and Github into your <a href="https://happygitwithr.com/rstudio-git-github.html">RStudio environment</a>. If you’ve done those things already, great, you’re good to go! Otherwise, it is <em>strongly recommended</em> that you pause what you’re doing now and read / work through <a href="https://happygitwithr.com/">Happy Git</a> before continuing.</p>
+<section id="why-is-it-good" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="why-is-it-good"><span class="header-section-number">7.1.2</span> Why is it good?</h3>
+<ul>
+<li>lives in an obvious, highly accessible place attached to the project’s repo</li>
+<li>enables transparent, asynchronous, collaborative decision-making</li>
+<li>organically documents that process</li>
+<li>provides an intuitive interface for tracking down the rationale for decisions which would otherwise be forgotten</li>
+<li>labels make it easy to highlight issues for specific team members or cross-functional collaborators</li>
+<li>code reviewers have a clear first stop for answering questions about decisions reflected in the code they’re reviewing</li>
+</ul>
 </section>
-<section id="usage-at-blueprint-as-of-may-2023" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="usage-at-blueprint-as-of-may-2023"><span class="header-section-number">2.3</span> Usage at Blueprint (as of May 2023)</h2>
-<p>Right now, usage is highly varied. Some members of the Data Lab team use git and Github for version control and hosting of both R packages and analysis project code. It is not, however, part of the typical analysis project. We will begin rolling out the <a href="wf-basic.html">basic workflow</a> in the summer of 2023 and see how it goes.</p>
+<section id="what-does-it-look-like" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="what-does-it-look-like"><span class="header-section-number">7.1.3</span> What does it look like?</h3>
+<section id="browsing-open-issues" class="level4" data-number="7.1.3.1">
+<h4 data-number="7.1.3.1" class="anchored" data-anchor-id="browsing-open-issues"><span class="header-section-number">7.1.3.1</span> Browsing open issues</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/wf-pilots-01-list.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A List of Github Issues</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="filtering-for-the-ones-you-might-be-able-to-help-with" class="level4" data-number="7.1.3.2">
+<h4 data-number="7.1.3.2" class="anchored" data-anchor-id="filtering-for-the-ones-you-might-be-able-to-help-with"><span class="header-section-number">7.1.3.2</span> Filtering for the ones you might be able to help with</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/wf-pilots-02-filter.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Filtered list of Gihub Issues</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="an-active-discussion" class="level4" data-number="7.1.3.3">
+<h4 data-number="7.1.3.3" class="anchored" data-anchor-id="an-active-discussion"><span class="header-section-number">7.1.3.3</span> An active discussion</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/wf-pilots-03-discuss.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Discussing issue #30</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="making-a-branch-for-work-associated-with-an-issue" class="level4" data-number="7.1.3.4">
+<h4 data-number="7.1.3.4" class="anchored" data-anchor-id="making-a-branch-for-work-associated-with-an-issue"><span class="header-section-number">7.1.3.4</span> Making a branch for work associated with an issue</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/wf-pilots-04-connect.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Creating a branch connected to the issue</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="searching-past-issues" class="level4" data-number="7.1.3.5">
+<h4 data-number="7.1.3.5" class="anchored" data-anchor-id="searching-past-issues"><span class="header-section-number">7.1.3.5</span> Searching past issues</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/wf-pilots-05-search-closed.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Searching through closed issues</figcaption><p></p>
+</figure>
+</div>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -367,13 +440,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./wf.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Workflow</span>
+      <a href="./wf-goal.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Advanced / Aspirational Workflow</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wf-structure.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Structure</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./viz.html" class="pagination-link">
+        <span class="nav-page-text">Visualization</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

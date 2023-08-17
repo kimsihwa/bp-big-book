@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blueprint Big Book of Data Analysis - 2&nbsp; Git and Github</title>
+<title>Blueprint Big Book of Data Analysis - 8&nbsp; Why Visualize?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wf-structure.html" rel="next">
-<link href="./wf.html" rel="prev">
+<link href="./viz-how.html" rel="next">
+<link href="./viz.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git and Github</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Why Visualize?</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wf-git.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git and Github</span></a>
+  <a href="./wf-git.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git and Github</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./viz-why.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Why Visualize?</span></a>
+  <a href="./viz-why.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Why Visualize?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -209,9 +209,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-git-and-github" id="toc-why-git-and-github" class="nav-link active" data-scroll-target="#why-git-and-github"><span class="toc-section-number">2.1</span>  Why Git and Github?</a></li>
-  <li><a href="#gitting-rolling" id="toc-gitting-rolling" class="nav-link" data-scroll-target="#gitting-rolling"><span class="toc-section-number">2.2</span>  Gitting rolling</a></li>
-  <li><a href="#usage-at-blueprint-as-of-may-2023" id="toc-usage-at-blueprint-as-of-may-2023" class="nav-link" data-scroll-target="#usage-at-blueprint-as-of-may-2023"><span class="toc-section-number">2.3</span>  Usage at Blueprint (as of May 2023)</a></li>
+  <li><a href="#exploration" id="toc-exploration" class="nav-link active" data-scroll-target="#exploration"><span class="toc-section-number">8.1</span>  Exploration</a></li>
+  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation"><span class="toc-section-number">8.2</span>  Presentation</a></li>
   </ul>
 </nav>
     </div>
@@ -220,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-wf-git" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git and Github</span></span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Why Visualize?</span></h1>
 </div>
 
 
@@ -234,32 +233,21 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Git is a <em>version control system</em>. It tracks the changes you make and <em>commit</em> to files in a <em>local repository</em>. It lets you apply those changes to <em>remote repositories</em> hosted on services like Github.</p>
-<section id="why-git-and-github" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="why-git-and-github"><span class="header-section-number">2.1</span> Why Git and Github?</h2>
-<p>In 2017, Jennifer Bryan expanded on the ‘Why Git?’ chapter of her invaluable instructional book in the paper <a href="https://peerj.com/preprints/3159v2/"><em>Excuse me, do you have a moment to talk about version control?</em></a>. She articulates the benefits so clearly that they are not worth rephrasing:</p>
+<section id="exploration" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="exploration"><span class="header-section-number">8.1</span> Exploration</h2>
 <ul>
-<li>Doing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect.</li>
-<li>Collaboration is much more structured, with powerful tools for asynchronous work and managing versions.</li>
-<li>The marginal effort required to create a web presence for a project is negligible.</li>
-<li>By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle.</li>
+<li>testing your prior expectations about the data</li>
+<li>identifying patterns and relationships</li>
+<li>visually confirming the results of processing</li>
 </ul>
-<p>If you have worked on a data analysis project at Blueprint, particularly one that involves collaboration, you have undoubtedly done the following:</p>
+</section>
+<section id="presentation" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="presentation"><span class="header-section-number">8.2</span> Presentation</h2>
 <ul>
-<li>Searching for an explanation about when or why a specific choice about processing the data was made</li>
-<li>Experienced disorientation attempting to navigate someone else’s code</li>
-<li>Spent hours undoing a change that breaks the pipeline</li>
-<li>Wanted someone’s help or advice about how to solve a problem, but didn’t feel like it would be worth getting them access</li>
+<li>supporting an argument</li>
+<li>anchoring an explanation</li>
+<li>impactfully illustrating a comparison</li>
 </ul>
-<p>Hosted version control like Github empowers you with tools to simplify and routinize any of these situations.</p>
-</section>
-<section id="gitting-rolling" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="gitting-rolling"><span class="header-section-number">2.2</span> Gitting rolling</h2>
-<p>At a minimum, you’ll need to <a href="https://happygitwithr.com/install-git.html">install git</a> and <a href="https://happygitwithr.com/github-acct.html">register a Github account</a>. Optionally, you can also integrate git and Github into your <a href="https://happygitwithr.com/rstudio-git-github.html">RStudio environment</a>. If you’ve done those things already, great, you’re good to go! Otherwise, it is <em>strongly recommended</em> that you pause what you’re doing now and read / work through <a href="https://happygitwithr.com/">Happy Git</a> before continuing.</p>
-</section>
-<section id="usage-at-blueprint-as-of-may-2023" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="usage-at-blueprint-as-of-may-2023"><span class="header-section-number">2.3</span> Usage at Blueprint (as of May 2023)</h2>
-<p>Right now, usage is highly varied. Some members of the Data Lab team use git and Github for version control and hosting of both R packages and analysis project code. It is not, however, part of the typical analysis project. We will begin rolling out the <a href="wf-basic.html">basic workflow</a> in the summer of 2023 and see how it goes.</p>
 
 
 </section>
@@ -367,13 +355,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./wf.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Workflow</span>
+      <a href="./viz.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Visualization</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wf-structure.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Structure</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./viz-how.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">How to Visualize</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

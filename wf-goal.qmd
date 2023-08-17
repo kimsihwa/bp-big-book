@@ -1,10 +1,7 @@
 # Advanced / Aspirational Workflow {#sec-wf-goal}
 
-:::{.callout-warning}
-This section is still quite rough. 
-If you're here, you're welcome to drop suggested changes, additions, or clarifications in the comments. 
-Your input will be incorporated into the development process. 
-:::
+
+{{< include content/_wip.qmd >}}
 
 **Bolded** items are clear hooks for tools, rules, standards. 
 
