@@ -207,9 +207,10 @@ dplt_02 |>
     ) +
     geom_text(
         aes(
-            label = glue::glue("p = {p:.2f}")
-        )
-        x = 0, 
+            label = glue::glue("p = {round(p, 2)}")
+        ),
+        x = 0,
+        hjust = 1.1,
         position = position_nudge(x = -.1, y = .12),
     ) +
     geom_vline(xintercept = 0, color = "grey20", lty = 2) +

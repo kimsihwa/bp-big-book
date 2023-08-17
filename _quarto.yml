@@ -2,6 +2,9 @@ project:
   type: book
   output-dir: docs
 
+execute: 
+  freeze: auto
+
 book:
   title: "Blueprint Big Book of Data Analysis"
   comments: 
